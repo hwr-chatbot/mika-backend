@@ -62,6 +62,10 @@ stories:
   steps:
   - intent: study_without_a-level
   - action: utter_study_without_a-level
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: a-level
+  - action: utter_topic_recap
 
 - story: english_courses
   steps:
@@ -72,11 +76,15 @@ stories:
   steps:
   - intent: guest_auditor
   - action: utter_guest_auditor
+  - action: action_set_topic
+  -slot_was_set:
+    - topic: guest auditor
+  - action: utter_topic_recap
 
 - story: demo_temp
   steps:
   - intent: welcome
-  - action: utter_welcome # Enthält aktuell die Anschlussfrage, was man über die HWR wissen will
+  - action: utter_welcome
   - intent: locations_hwr
   - action: utter_locations_hwr
   - intent: information_courses
@@ -101,6 +109,10 @@ stories:
   steps:
   - intent: admission_requirement
   - action: utter_admission_requirement
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: admission
+  - action: utter_topic_recap
 
 - story: english_certificate
   steps:
@@ -116,11 +128,19 @@ stories:
   steps:
   - intent: cv
   - action: utter_cv
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: cv
+  - action: utter_topic_recap
 
 - story: prerequisite_admission
   steps:
   - intent: prerequisite_admission
   - action: utter_prerequisite_admission
+  - action: action_set_topic
+  - slot_was_set: 
+    - topic: admission
+  - action: utter_topic_recap
 
 - story: masters_program
   steps:
@@ -131,6 +151,10 @@ stories:
   steps:
   - intent: admission_documents
   - action: utter_admission_documents
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: admission
+  - action: utter_topic_recap
 
 - story: master_or_bachelor
   steps:
@@ -141,6 +165,10 @@ stories:
   steps:
   - intent: application_from_international_university
   - action: utter_application_from_international_university
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: application
+  - action: utter_topic_recap
 
 - story: missed_deadline
   steps:
@@ -151,11 +179,19 @@ stories:
   steps:
   - intent: application_deadline
   - action: utter_application_deadline
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: application
+  - action: utter_topic_recap
 
 - story: where_to_apply
   steps:
   - intent: where_to_apply
   - action: utter_where_to_apply
+  - action: action_set_topic
+  - slot_was_set:
+    - topic: application
+  - action: utter_topic_recap
 
 - story: application_many_programs_needed
   steps:
@@ -430,3 +466,5 @@ stories:
   - action: utter_thank
   - intent: say_goodbye
   - action: utter_say_goodbye
+
+- story: 

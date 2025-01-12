@@ -609,7 +609,22 @@ responses:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: 
+  
+entities:
+  - topic
 
-# actions:
-# - action_process_and_respond
+slots:
+  topic:
+    type: categorical
+    values:
+      - a-level
+      - guest auditor
+      - cv
+      - admission
+      - application
+      - aps
+      - eligibility
+      - gmat
+      - semester
+      - 
