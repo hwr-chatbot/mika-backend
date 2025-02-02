@@ -1681,6 +1681,494 @@ nlu:
     - Can you explain the purpose of life?
     - What’s life’s significance?
 
+- intent: whats_gmat+gmat_needed
+  examples: |
+    - What is GMAT? Do I need GMAT to apply?
+    - What is GMAT? Do I need it?
+    - What is GMAT Testscore? Is GMAT mandatory?
+    - What is a GMAT test? Do I have to submit a GMAT test score?
+    - What exactly is GMAT? Is GMAT required to apply?
+    - Can you explain what the GMAT is? Is a GMAT score necessary for my application?
+    - What is the purpose of the GMAT? Must I take the GMAT to apply?
+    - What kind of exam is the GMAT? Do I need to provide a GMAT score?
+    - What does the GMAT measure? Is the GMAT a required test for admission?
+    - What is the GMAT used for? Am I required to take the GMAT?
+    - Can you tell me what the GMAT is? Is it possible to apply without a GMAT score?
+    - What does GMAT stand for? What is the minimum GMAT score needed to apply?
+    - What is involved in the GMAT? Is GMAT compulsory for application?
+    - What is tested in the GMAT? Do I need a GMAT score to be eligible to apply?
+    - What areas does the GMAT cover? Is it mandatory to have a GMAT score for application?
+    - What do GMAT scores indicate? Can I submit my application without a GMAT score?
+    - What does a GMAT score represent? Is a GMAT test score a requirement for application?
+    - What is the GMAT exam all about? What GMAT score do I need for admission?
+    - What are GMAT scores used for? Is taking the GMAT necessary for applying?
+    - What is the significance of the GMAT? Is a GMAT score part of the application requirements?
+    - Why is the GMAT important? Do all applicants need to submit a GMAT score?
+    - What does GMAT test for? Is GMAT a required criterion for applying?
+    - How is the GMAT structured? Can I proceed with my application without a GMAT score?
+    - What sections are included in the GMAT? Can I submit my application without a GMAT score?
+    - What does one need to know about the GMAT? Is GMAT a required criterion for applying?
+
+- intent: whats_gmat+whats_aps
+  examples: |
+    - What is GMAT? What is APS?
+    - What is GMAT? What is APS and do I need it?
+    - What is GMAT Testscore? What is APS?
+    - What is a GMAT test? What is APS and is it required?
+    - What exactly is GMAT? What is APS and do I need it?
+    - Can you explain what the GMAT is? What is APS and is it necessary?
+    - What is the purpose of the GMAT? What is APS and is it mandatory?
+    - What kind of exam is the GMAT? What is APS and do I have to provide it?
+    - What does the GMAT measure? What is APS and is it a required test?
+    - What is the GMAT used for? What is APS and do I have to take it?
+    - Can you tell me what the GMAT is? What is APS and is it compulsory?
+    - What does GMAT stand for? What is APS and is it a requirement?
+    - What is involved in the GMAT? What is APS and is it a necessity?
+    - What is tested in the GMAT? What is APS and is it a must?
+    - What areas does the GMAT cover? What is APS and is it a prerequisite?
+    - What do GMAT scores indicate? What is APS and is it a condition?
+    - What does a GMAT score represent? What is APS and is it a criterion?
+    - What is the GMAT exam all about? What is APS and is it a criterion?
+    - What are GMAT scores used for? What is APS and is it a requirement?
+    - What is the significance of the GMAT? What is APS and is it a necessity?
+    - Why is the GMAT important? What is APS and is it a must?
+    - What does GMAT test for? What is APS and is it a prerequisite?
+    - How is the GMAT structured? What is APS and is it a condition?
+    - What sections are included in the GMAT? What is APS and is it a criterion?
+    - What does one need to know about the GMAT? What is APS and is it a requirement?
+
+- intent: whats_aps+aps_needed
+  examples: |
+    - What is APS? Do I need APS to apply?#
+    - Whats APS? Do I need it?
+    - What is APS? Is APS mandatory?
+    - What is APS? Do I have to submit an APS certificate?
+    - What is APS? Is APS required to apply?
+    - What is APS? Can I apply without APS?
+    - What is APS? Is an APS score necessary for my application?
+    - What is APS? Must I take the APS to apply?
+    - What is APS? Do I need to provide an APS score?
+    - What is APS? Is the APS a required test for admission?
+    - What is APS? Am I required to take the APS?
+    - What is APS? Is it possible to apply without an APS score?
+    - What is APS? What is the minimum APS score needed to apply?
+    - What is APS? Is APS compulsory for application?
+    - What is APS? Do I need an APS score to be eligible to apply?
+    - What is APS? Is it mandatory to have an APS score for application?
+    - What is APS? Can I submit my application without an APS score?
+    - What is APS? Is an APS test score a requirement for application?
+    - What is APS? What APS score do I need for admission?
+    - What is APS? Is taking the APS necessary for applying?
+    - What is APS? Is an APS score part of the application requirements?
+    - What is APS? Do all applicants need to submit an APS score?
+    - What is APS? Is APS a required criterion for applying?
+    - What is APS? Can I proceed with my application without an APS score?
+
+- intent: where_to_apply+application_deadline
+  examples: |
+    - Where can I apply? What is the application deadline?
+    - Where can I submit my application? When is the deadline?
+    - Where do I apply? What is the deadline for applications?
+    - Where do I send my application? When is the application deadline?
+    - Where should I apply? What is the deadline for application submission?
+    - Where should I submit my application? When is the deadline for applications?
+    - Where do I send my application documents? What is the application deadline?
+    - Where can I apply for the program? When is the deadline for applications?
+    - Where do I apply for the program? What is the deadline for application submission?
+    - Where can I submit my application for the program? When is the deadline for applications?
+    - Where do I send my application for the program? What is the application deadline?
+    - Where should I apply for the program? When is the deadline for application submission?
+    - Where should I submit my application for the program? What is the deadline for applications?
+    - Where do I send my application documents for the program? When is the application deadline?
+    - Where can I apply for the program? What is the deadline for applications?
+    - Where do I apply for the program? When is the deadline for application submission?
+    - Where can I submit my application for the program? What is the deadline for applications?
+    - Where do I send my application for the program? When is the application deadline?
+    - Where should I apply for the program? What is the deadline for application submission?
+    - Where should I submit my application for the program? When is the deadline for applications?
+    - Where do I send my application documents for the program? What is the application deadline?
+
+- intent: application_status+application_deadline
+  examples: |
+    - What is the status of my application? When is the deadline?
+    - Can you tell me the status of my application? What is the deadline?
+    - What is the progress of my application? When is the deadline?
+    - Can you update me on my application status? What is the deadline?
+    - What is the situation with my application? When is the deadline?
+    - Can you inform me about my application status? What is the deadline?
+    - What is the status of my application process? When is the deadline?
+    - Can you provide me with information on my application status? What is the deadline?
+    - What is the status of my application submission? When is the deadline?
+    - Can you give me an update on my application status? What is the deadline?
+    - What is the status of my application review? When is the deadline?
+    - Can you tell me the status of my application evaluation? What is the deadline?
+    - What is the status of my application assessment? When is the deadline?
+    - Can you update me on my application progress? What is the deadline?
+    - What is the situation with my application process? When is the deadline?
+    - Can you inform me about my application review? What is the deadline?
+    - What is the status of my application evaluation? When is the deadline?
+    - Can you provide me with information on my application assessment? What is the deadline?
+    - What is the status of my application submission? When is the deadline?
+    - Can you give me an update on my application status? What is the deadline?
+    - What is the status of my application process? When is the deadline?
+    - Can you tell me the status of my application evaluation? What is the deadline?
+    - What is the status of my application assessment? When is the deadline?
+
+- intent: application_many_programs_needed+application_many_programs_possible
+  examples: |
+    - Do I need to apply for each program separately? Is it possible to apply for multiple programs?
+    - Do I have to submit separate applications for each program? Can I apply for more than one program?
+    - Do I need to apply separately for each program? Is it possible to apply for multiple programs at once?
+    - Do I have to submit individual applications for each program? Can I apply for more than one program simultaneously?
+    - Do I need to apply for each program individually? Is it possible to apply for multiple programs at the same time?
+    - Do I have to submit separate applications for each program? Can I apply for more than one program at the same time?
+    - Do I need to apply separately for each program? Is it possible to apply for multiple programs simultaneously?
+    - Do I have to submit individual applications for each program? Can I apply for more than one program at the same time?
+    - Do I need to apply for each program separately? Is it possible to apply for multiple programs at once?
+    - Do I have to submit separate applications for each program? Can I apply for more than one program simultaneously?
+    - Do I need to apply separately for each program? Is it possible to apply for multiple programs at the same time?
+    - Do I have to submit individual applications for each program? Can I apply for more than one program at the same time?
+    - Do I need to apply for each program individually? Is it possible to apply for multiple programs simultaneously?
+    - Do I have to submit separate applications for each program? Can I apply for more than one program at the same time?
+    - Do I need to apply separately for each program? Is it possible to apply for multiple programs simultaneously?
+    - Do I have to submit individual applications for each program? Can I apply for more than one program at the same time?
+    - Do I need to apply for each program separately? Is it possible to apply for multiple programs at once?
+    - Do I have to submit separate applications for each program? Can I apply for more than one program simultaneously?
+    - Do I need to apply separately for each program? Is it possible to apply for multiple programs simultaneously?
+    - Do I have to submit individual applications for each program? Can I apply for more than one program at the same time?
+    - Do I need to apply for each program individually? Is it possible to apply for multiple programs simultaneously?
+
+- intent: application_many_programs_chance_increase+application_status
+  examples: |
+    - Does applying for multiple programs increase my chances of admission? What is the status of my application?
+    - Will my chances of admission be higher if I apply for multiple programs? Can you tell me the status of my application?
+    - Does applying for more than one program improve my chances of being admitted? What is the progress of my application?
+    - Will my chances of being accepted be better if I apply for multiple programs? Can you update me on my application status?
+    - Does applying for several programs increase my likelihood of being admitted? What is the situation with my application?
+    - Will my chances of being accepted be higher if I apply for multiple programs? Can you inform me about my application status?
+    - Does applying for multiple programs enhance my probability of being admitted? What is the status of my application process?
+    - Will my chances of being accepted be greater if I apply for multiple programs? Can you provide me with information on my application status?
+    - Does applying for more than one program improve my odds of being admitted? What is the status of my application submission?
+    - Will my chances of being accepted be improved if I apply for multiple programs? Can you give me an update on my application status?
+    - Does applying for multiple programs increase my chances of admission? What is the status of my application review?
+    - Will my chances of admission be higher if I apply for multiple programs? Can you tell me the status of my application evaluation?
+    - Does applying for more than one program improve my chances of being admitted? What is the status of my application assessment?
+    - Will my chances of being accepted be better if I apply for multiple programs? What is the status of my application submission?
+    - Does applying for several programs increase my likelihood of being admitted? Can you give me an update on my application status?
+    - Will my chances of being accepted be higher if I apply for multiple programs? What is the status of my application process?
+    - Does applying for multiple programs enhance my probability of being admitted? Can you tell me the status of my application evaluation?
+    - Will my chances of being accepted be greater if I apply for multiple programs? Can you provide me with information on my application assessment?
+    - Does applying for more than one program improve my odds of being admitted? What is the status of my application submission?
+    - Will my chances of being accepted be improved if I apply for multiple programs? Can you give me an update on my application status?
+
+- intent: application_deadline+application_status
+  examples: |
+    - What is the application deadline? What is the status of my application?
+    - When is the deadline for applications? Can you tell me the status of my application?
+    - What is the deadline for application submission? What is the deadline?
+    - When is the deadline for applications? Can you update me on my application status?
+    - What is the deadline for application submission? What is the situation with my application?
+    - When is the deadline for applications? Can you inform me about my application status?
+    - What is the deadline for application submission? What is the status of my application process?
+    - When is the deadline for applications? Can you provide me with information on my application status?
+    - What is the deadline for application submission? What is the status of my application submission?
+    - When is the deadline for applications? Can you give me an update on my application status?
+    - What is the deadline for application submission? What is the status of my application review?
+    - When is the deadline for applications? Can you tell me the status of my application evaluation?
+    - What is the deadline for application submission? What is the status of my application assessment?
+    - When is the deadline for applications? Can you update me on my application status?
+    - What is the deadline for application submission? What is the status of my application process?
+    - When is the deadline for applications? Can you tell me the status of my application evaluation?
+    - What is the deadline for application submission? Can you provide me with information on my application assessment?
+    - When is the deadline for applications? Can you give me an update on my application status?
+    - What is the deadline for application submission? What is the status of my application submission?
+    - When is the deadline for applications? Can you tell me the status of my application process?
+
+- intent: english_proficiency_proof+duolingo_accepted
+  examples: |
+    - Which English proficiency documentation is necessary for applying? Do you accept Duolingo certificates?
+    - What English language tests are required to apply? Do you accept Duolingo certificates?
+    - Which certificates are accepted to demonstrate English proficiency? Do you accept Duolingo certificates?
+    - What English proficiency tests are needed to apply? Do you accept Duolingo certificates?
+    - Which English language tests are mandatory for application? Do you accept Duolingo certificates?
+    - What English proficiency documentation is required for applying? Do you accept Duolingo certificates?
+    - Which certificates are necessary to prove English proficiency? Do you accept Duolingo certificates?
+    - What English language tests are compulsory for application? Do you accept Duolingo certificates?
+    - Which English proficiency documentation is needed for applying? Do you accept Duolingo certificates?
+    - What English language tests are obligatory for application? Do you accept Duolingo certificates?
+    - Which English proficiency documentation is mandatory for applying? Do you accept Duolingo certificates?
+    - What English language tests are essential for application? Do you accept Duolingo certificates?
+    - Which English proficiency documentation is obligatory for applying? Do you accept Duolingo certificates?
+    - What English language tests are required for application? Do you accept Duolingo certificates?
+    - Which certificates are accepted to demonstrate English proficiency? Do you accept Duolingo certificates?
+    - What English proficiency tests are needed to apply? Do you accept Duolingo certificates?
+    - Which English language tests are mandatory for application? Do you accept Duolingo certificates?
+    - What English proficiency documentation is required for applying? Do you accept Duolingo certificates?
+    - Which certificates are necessary to prove English proficiency? Do you accept Duolingo certificates?
+    - What English language tests are compulsory for application? Do you accept Duolingo certificates?
+    - Which English proficiency documentation is needed for applying? Do you accept Duolingo certificates?
+    - What English language tests are obligatory for application? Do you accept Duolingo certificates?
+    - Which English proficiency documentation is mandatory for applying? Do you accept Duolingo certificates?
+    - What English language tests are essential for application? Do you accept Duolingo certificates?
+
+- intent: cv+motivational_letter
+  examples: | 
+    - Do I need to submit a CV? Is a motivational letter required?
+    - Is a CV necessary for the application? Do I have to provide a motivational letter?
+    - Do I have to send a CV? Is a motivational letter mandatory?
+    - Is a CV compulsory for the application? Do I need to include a motivational letter?
+    - Do I need to attach a CV? Is a motivational letter obligatory?
+    - Is a CV required for the application? Do I need to submit a motivational letter?
+    - Do I need to include a CV? Is a motivational letter essential?
+    - Is a CV mandatory for the application? Do I have to write a motivational letter?
+    - Do I need to provide a CV? Is a motivational letter needed?
+    - Is a CV obligatory for the application? Do I need to attach a motivational letter?
+    - Do I have to upload a CV? Is a motivational letter compulsory?
+    - Is a CV essential for the application? Do I need to send a motivational letter?
+    - Do I need to submit a CV? Is a motivational letter required?
+    - Is a CV necessary for the application? Do I have to provide a motivational letter?
+    - Do I have to send a CV? Is a motivational letter mandatory?
+    - Is a CV compulsory for the application? Do I need to include a motivational letter?
+    - Do I need to attach a CV? Is a motivational letter obligatory?
+    - Is a CV required for the application? Do I need to submit a motivational letter?
+    - Do I need to include a CV? Is a motivational letter essential?
+    - Is a CV mandatory for the application? Do I have to write a motivational letter?
+    - Do I need to provide a CV? Is a motivational letter needed?
+    - Is a CV obligatory for the application? Do I need to attach a motivational letter?
+    - Do I have to upload a CV? Is a motivational letter compulsory?
+    - Is a CV essential for the application? Do I need to send a motivational letter?
+
+- intent: masters_program+consecutive_master
+  examples: |
+    - What is a master's program? What is a consecutive master's program?
+    - Can you explain what a master's program is? What is a consecutive master's program?
+    - What does a master's program entail? What is a consecutive master's program?
+    - Can you describe what a master's program is? What is a consecutive master's program?
+    - What is involved in a master's program? What is a consecutive master's program?
+    - Can you provide information on a master's program? What is a consecutive master's program?
+    - What is a master's program all about? What is a consecutive master's program?
+    - Can you give details on a master's program? What is a consecutive master's program?
+    - What is a master's program? What is a consecutive master's program?
+    - Can you explain what a master's program is? What is a consecutive master's program?
+    - What does a master's program entail? What is a consecutive master's program?
+    - Can you describe what a master's program is? What is a consecutive master's program?
+    - What is involved in a master's program? What is a consecutive master's program?
+    - Can you provide information on a master's program? What is a consecutive master's program?
+    - What is a master's program all about? What is a consecutive master's program?
+    - Can you give details on a master's program? What is a consecutive master's program?
+    - What is a master's program? What is a consecutive master's program?
+    - Can you explain what a master's program is? What is a consecutive master's program?
+    - What does a master's program entail? What is a consecutive master's program?
+    - Can you describe what a master's program is? What is a consecutive master's program?
+    - What is involved in a master's program? What is a consecutive master's program?
+    - Can you provide information on a master's program? What is a consecutive master's program?
+    - What is a master's program all about? What is a consecutive master's program?
+    - Can you give details on a master's program? What is a consecutive master's program?
+
+- intent: admission_documents+admission_requirement
+  examples: |
+    - What documents are needed for admission? What are the admission requirements?
+    - Which documents are required for admission? What are the admission criteria?
+    - What documents do I need for admission? What are the admission prerequisites?
+    - Which documents are necessary for admission? What are the admission standards?
+    - What documents are mandatory for admission? What are the admission conditions?
+    - Which documents are compulsory for admission? What are the admission terms?
+    - What documents do I have to provide for admission? What are the admission regulations?
+    - Which documents are obligatory for admission? What are the admission rules?
+    - What documents are needed for admission? What are the admission requirements?
+    - Which documents are required for admission? What are the admission criteria?
+    - What documents do I need for admission? What are the admission prerequisites?
+    - Which documents are necessary for admission? What are the admission standards?
+    - What documents are mandatory for admission? What are the admission conditions?
+    - Which documents are compulsory for admission? What are the admission terms?
+    - What documents do I have to provide for admission? What are the admission regulations?
+    - Which documents are obligatory for admission? What are the admission rules?
+    - What documents are needed for admission? What are the admission requirements?
+    - Which documents are required for admission? What are the admission criteria?
+    - What documents do I need for admission? What are the admission prerequisites?
+    - Which documents are necessary for admission? What are the admission standards?
+    - What documents are mandatory for admission? What are the admission conditions?
+    - Which documents are compulsory for admission? What are the admission terms?
+    - What documents do I have to provide for admission? What are the admission regulations?
+    - Which documents are obligatory for admission? What are the admission rules?
+
+- intent: eligibility+eligibility_check
+  examples: |
+    - Am I eligible to apply? Can you check my eligibility?
+    - Do I meet the eligibility requirements? Can you verify my eligibility?
+    - Am I entitled to apply? Can you confirm my eligibility?
+    - Do I satisfy the eligibility criteria? Can you validate my eligibility?
+    - Am I authorized to apply? Can you ascertain my eligibility?
+    - Do I fulfill the eligibility conditions? Can you determine my eligibility?
+    - Am I permitted to apply? Can you establish my eligibility?
+    - Do I meet the eligibility standards? Can you check my eligibility?
+    - Am I allowed to apply? Can you check my eligibility?
+    - Do I meet the eligibility requirements? Can you verify my eligibility?
+    - Am I entitled to apply? Can you confirm my eligibility?
+    - Do I satisfy the eligibility criteria? Can you validate my eligibility?
+    - Am I authorized to apply? Can you ascertain my eligibility?
+    - Do I fulfill the eligibility conditions? Can you determine my eligibility?
+    - Am I permitted to apply? Can you establish my eligibility?
+    - Do I meet the eligibility standards? Can you check my eligibility?
+    - Am I allowed to apply? Can you check my eligibility?
+    - Do I meet the eligibility requirements? Can you verify my eligibility?
+    - Am I entitled to apply? Can you confirm my eligibility?
+    - Do I satisfy the eligibility criteria? Can you validate my eligibility?
+    - Am I authorized to apply? Can you ascertain my eligibility?
+    - Do I fulfill the eligibility conditions? Can you determine my eligibility?
+    - Am I permitted to apply? Can you establish my eligibility?
+    - Do I meet the eligibility standards? Can you check my eligibility?
+
+- intent: eligibility_check+eligibility_check_who
+  examples: |
+    - Can you check my eligibility? Who can verify my eligibility?
+    - Can you verify my eligibility? Who can confirm my eligibility?
+    - Can you confirm my eligibility? Who can validate my eligibility?
+    - Can you validate my eligibility? Who can ascertain my eligibility?
+    - Can you ascertain my eligibility? Who can determine my eligibility?
+    - Can you determine my eligibility? Who can establish my eligibility?
+    - Can you establish my eligibility? Who can check my eligibility?
+    - Can you check my eligibility? Who can verify my eligibility?
+    - Can you verify my eligibility? Who can confirm my eligibility?
+    - Can you confirm my eligibility? Who can validate my eligibility?
+    - Can you validate my eligibility? Who can ascertain my eligibility?
+    - Can you ascertain my eligibility? Who can determine my eligibility?
+    - Can you determine my eligibility? Who can establish my eligibility?
+    - Can you establish my eligibility? Who can check my eligibility?
+    - Can you check my eligibility? Who can verify my eligibility?
+    - Can you verify my eligibility? Who can confirm my eligibility?
+    - Can you confirm my eligibility? Who can validate my eligibility?
+    - Can you validate my eligibility? Who can ascertain my eligibility?
+    - Can you ascertain my eligibility? Who can determine my eligibility?
+    - Can you determine my eligibility? Who can establish my eligibility?
+    - Can you establish my eligibility? Who can check my eligibility?
+    - Can you check my eligibility? Who can verify my eligibility?
+
+- intent: no_relevant_studies+study_without_a-level
+  examples: |
+    - I don't have relevant studies. Can I study without A-levels?
+    - I don't have relevant studies. Can I study without Abitur?
+    - I don't have the necessary studies. Can I study without A-levels?
+    - I don't have the required studies. Can I study without A-levels?
+    - I don't have the relevant studies. Can I study without A-levels?
+    - I don't have the relevant qualifications. Can I study without A-levels?
+    - I don't have the necessary qualifications. Can I study without A-levels?
+    - I don't have the required qualifications. Can I study without A-levels?
+    - I don't have the relevant qualifications. Can I study without A-levels?
+    - I don't have the relevant studies. Can I study without A-levels?
+    - I don't have the necessary studies. Can I study without A-levels?
+    - I don't have the required studies. Can I study without A-levels?
+    - I don't have the relevant studies. Can I study without A-levels?
+    - I don't have the relevant qualifications. Can I study without A-levels?
+    - I don't have the necessary qualifications. Can I study without A-levels?
+    - I don't have the required qualifications. Can I study without A-levels?
+    - I don't have the relevant qualifications. Can I study without A-levels?
+    - I don't have the relevant studies. Can I study without A-levels?
+    - I don't have the necessary studies. Can I study without A-levels?
+    - I don't have the required studies. Can I study without A-levels?
+    - I don't have the relevant studies. Can I study without A-levels?
+    - I don't have the relevant qualifications. Can I study without A-levels?
+    - I don't have the necessary qualifications. Can I study without A-levels?
+    - I don't have the required qualifications. Can I study without A-levels?
+    - I don't have the relevant qualifications. Can I study without A-levels?
+
+- intent: defer_study_start+semester_start
+  examples: |
+    - Can I defer my study start date? When does the semester start?
+    - Can I postpone my study start date? When does the semester begin?
+    - Can I delay my study start date? When does the semester commence?
+    - Can I move my study start date? When does the semester initiate?
+    - Can I change my study start date? When does the semester launch?
+    - Can I relocate my study start date? When does the semester kick off?
+    - Can I switch my study start date? When does the semester get going?
+    - Can I move my study start date? When does the semester get started?
+    - Can I defer my study start date? When does the semester get underway?
+    - Can I postpone my study start date? When does the semester get off the ground?
+    - Can I delay my study start date? When does the semester get the ball rolling?
+    - Can I move my study start date? When does the semester begin?
+    - Can I defer my study start date? When does the semester start?
+    - Can I postpone my study start date? When does the semester begin?
+    - Can I delay my study start date? When does the semester begin?
+    - Can I move my study start date? When does the semester begin?
+    - Can I change my study start date? When does the semester start?
+    - Can I relocate my study start date? When does the semester start?
+    - Can I switch my study start date? When does the semester start?
+    - Can I move my study start date? When does the semester start?
+    - Can I defer my study start date? When does the semester start?
+    - Can I postpone my study start date? When does the semester start?
+    - Can I delay my study start date? When does the semester start?
+    - Can I move my study start date? When does the semester start?
+    - Can I change my study start date? When does the semester start?
+
+- intent: semester_start+time_span_semester
+  examples: |
+    - When does the semester start? How long is a typical semester?
+    - When does the semester begin? How long is a typical semester?
+    - When does the semester commence? How long is a typical semester?
+    - When does the semester initiate? How long is a typical semester?
+    - When does the semester launch? How long is a typical semester?
+    - When does the semester kick off? How long is a typical semester?
+    - When does the semester get going? How long is a typical semester?
+    - When does the semester get started? How long is a typical semester?
+    - When does the semester get underway? How long is a typical semester?
+    - When does the semester get off the ground? How long is a typical semester?
+    - When does the semester get the ball rolling? How long is a typical semester?
+    - When does the semester start? How long is a typical semester?
+    - When does the semester begin? How long is a typical semester?
+    - When does the semester commence? How long is a typical semester?
+    - When does the semester initiate? How long is a typical semester?
+    - When does the semester launch? How long is a typical semester?
+    - When does the semester kick off? How long is a typical semester?
+    - When does the semester get going? How long is a typical semester?
+    - When does the semester get started? How long is a typical semester?
+    - When does the semester get underway? How long is a typical semester?
+    - When does the semester get off the ground? How long is a typical semester?
+    - When does the semester get the ball rolling? How long is a typical semester?
+    - When does the semester start? How long is a typical semester?
+    - When does the semester begin? How long is a typical semester?
+    - When does the semester commence? How long is a typical semester?
+    - When does the semester initiate? How long is a typical semester?
+    - When does the semester launch? How long is a typical semester?
+    - When does the semester kick off? How long is a typical semester?
+    - When does the semester get going? How long is a typical semester?
+    - When does the semester get started? How long is a typical semester?
+    - When does the semester get underway? How long is a typical semester?
+    - When does the semester get off the ground? How long is a typical semester?
+
+- intent: work_experience_accepted+swap_work_experience
+  examples: |
+    - Is work experience accepted? Can I swap work experience for a test?
+    - Is professional experience accepted? Can I swap work experience for a test?
+    - Is practical experience accepted? Can I swap work experience for a test?
+    - Is hands-on experience accepted? Can I swap work experience for a test?
+    - Is real-world experience accepted? Can I swap work experience for a test?
+    - Is on-the-job experience accepted? Can I swap work experience for a test?
+    - Is job experience accepted? Can I swap work experience for a test?
+    - Is employment experience accepted? Can I swap work experience for a test?
+    - Is work background accepted? Can I swap work experience for a test?
+    - Is work history accepted? Can I swap work experience for a test?
+    - Is work record accepted? Can I swap work experience for a test?
+    - Is work experience accepted? Can I swap work experience for a test?
+    - Is professional experience accepted? Can I swap work experience for a test?
+    - Is practical experience accepted? Can I swap work experience for a test?
+    - Is hands-on experience accepted? Can I swap work experience for a test?
+    - Is real-world experience accepted? Can I swap work experience for a test?
+    - Is on-the-job experience accepted? Can I swap work experience for a test?
+    - Is job experience accepted? Can I swap work experience for a test?
+    - Is employment experience accepted? Can I swap work experience for a test?
+    - Is work background accepted? Can I swap work experience for a test?
+    - Is work history accepted? Can I swap work experience for a test?
+    - Is work record accepted? Can I swap work experience for a test?
+    - Is work experience accepted? Can I swap work experience for a test?
+    - Is professional experience accepted? Can I swap work experience for a test?
+    - Is practical experience accepted? Can I swap work experience for a test?
+    - Is hands-on experience accepted? Can I swap work experience for a test?
+    - Is real-world experience accepted? Can I swap work experience for a test?
+    - Is on-the-job experience accepted? Can I swap work experience for a test?
+    - Is job experience accepted? Can I swap work experience for a test?
+    - Is employment experience accepted? Can I swap work experience for a test?
+    - Is work background accepted? Can I swap work experience for a test?
+
 # - regex: ask_multiple_questions
 #   examples: |
 #     - .+[.?!]\s+.+[.?!]
