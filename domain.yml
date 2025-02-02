@@ -633,3 +633,4 @@ slots:
 
 actions:
   - action_set_topic
+  - action_handle_multiple_intents
