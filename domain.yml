@@ -627,4 +627,9 @@ slots:
       - eligibility
       - gmat
       - semester
-      - 
+    mappings:
+      - type: from_entity
+        entity: topic
+
+actions:
+  - action_set_topic

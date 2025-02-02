@@ -25,3 +25,29 @@ class ActionSetTopic(Action):
             dispatcher.utter_message(text=f"I will remember that your topic is {topic}.")
             return [SlotSet("topic", topic)]
         return []
+
+class HandleMultipleIntents(Action):
+    def name(self):
+        return "action_handle_multiple_intents"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
+        # Liste der besten Intents aus der Nachricht
+        intents = tracker.latest_message["intent_ranking"]
+        
+        # Maximale Anzahl an Intents, die verarbeitet werden sollen
+        max_intents = 3
+
+        # Antworten aus der `domain.yml` generieren
+        responses = []
+        for intent in intents[:max_intents]:
+            response_key = f"utter_{intent['name']}"  # Antwort-Schlüssel aus domain.yml
+            if response_key in domain["responses"]:
+                responses.append(domain["responses"][response_key][0]["text"])  # Antwort abrufen
+        
+        # Antworten an den Benutzer senden
+        if responses:
+            dispatcher.utter_message(text=" ".join(responses))
+        else:
+            dispatcher.utter_message(text="I don't know, if I got that right. Please try to ask question by question.")
+        
+        return []

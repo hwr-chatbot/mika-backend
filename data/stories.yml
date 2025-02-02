@@ -65,7 +65,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: a-level
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: english_courses
   steps:
@@ -77,9 +77,9 @@ stories:
   - intent: guest_auditor
   - action: utter_guest_auditor
   - action: action_set_topic
-  -slot_was_set:
+  - slot_was_set:
     - topic: guest auditor
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: demo_temp
   steps:
@@ -112,7 +112,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: admission
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: english_certificate
   steps:
@@ -131,7 +131,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: cv
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: prerequisite_admission
   steps:
@@ -140,7 +140,7 @@ stories:
   - action: action_set_topic
   - slot_was_set: 
     - topic: admission
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: masters_program
   steps:
@@ -154,7 +154,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: admission
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: master_or_bachelor
   steps:
@@ -168,7 +168,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: application
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: missed_deadline
   steps:
@@ -182,7 +182,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: application
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: where_to_apply
   steps:
@@ -191,7 +191,7 @@ stories:
   - action: action_set_topic
   - slot_was_set:
     - topic: application
-  - action: utter_topic_recap
+  - action: utter_end
 
 - story: application_many_programs_needed
   steps:
@@ -327,6 +327,43 @@ stories:
   steps:
   - intent: swap_work_experience
   - action: utter_swap_work_experience
+
+- story: ask_multiple_questions
+  steps:
+  - intent: whats_gmat+gmat_needed
+  - action: action_handle_multiple_intents
+  - intent: whats_aps+aps_needed
+  - action: action_handle_multiple_intents
+  - intent: where_to_apply+application_deadline
+  - action: action_handle_multiple_intents
+  - intent: application_status+application_status_uni_assist
+  - action: action_handle_multiple_intents
+  - intent: application_many_programs_needed+application_many_programs_possible
+  - action: action_handle_multiple_intents
+  - intent: application_many_programs_chance_increase+application_status
+  - action: action_handle_multiple_intents
+  - intent: application_deadline+application_status
+  - action: action_handle_multiple_intents
+  - intent: english_proficiency_proof+duolingo_accepted
+  - action: action_handle_multiple_intents
+  - intent: cv+motivational_letter
+  - action: action_handle_multiple_intents
+  - intent: admission_documents+admission_requirement
+  - action: action_handle_multiple_intents
+  - intent: masters_program+consecutive_master
+  - action: action_handle_multiple_intents
+  - intent: eligibility+eligibility_check
+  - action: action_handle_multiple_intents
+  - intent: eligibility_check+eligibility_check_who
+  - action: action_handle_multiple_intents
+  - intent: no_relevant_studies+study_without_a-level
+  - action: action_handle_multiple_intents
+  - intent: defer_study_start+semester_start
+  - action: action_handle_multiple_intents
+  - intent: semester_start+time_span_semester
+  - action: action_handle_multiple_intents
+  - intent: work_experience_accepted+swap_work_experience
+  - action: action_handle_multiple_intents
 
 - story: greet_and_provide_course_info
   steps:
