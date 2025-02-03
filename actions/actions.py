@@ -1,31 +1,38 @@
-from rasa_sdk import Action
-from rasa_sdk.events import SlotSet
+from typing import Any, List, Dict, Text
+from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.interfaces import Tracker
-from rasa_sdk.interpreter import RasaNLUInterpreter
+from rasa_sdk.events import SlotSet
+
 
 class ActionSetTopic(Action):
-    def name(self):
+    def name(self) -> Text:
         return "action_set_topic"
 
-    def run(self, dispatcher, tracker, domain):
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+
+        # Mapping von Intent-Namen zu Themen
         intent_to_topic = {
-            "study_without_a-level": "a-level",
+            "study_without_a_level": "a-level",
             "guest_auditor": "guest auditor",
             "english_certificate": "english certificate",
             "cv": "cv",
-            "motivational_letter": "motivational letter"
+            "motivational_letter": "motivational letter",
             "admission_requirement": "admission",
             "prerequisite_admission": "admission",
-            "admission_documents": "admission"
+            "admission_documents": "admission",
             "application_from_international_university": "application",
             "aps_needed": "aps",
             "whats_aps": "aps",
             "aps_hand_in_late": "aps",
             "missed_deadline": "deadline",
-            "application_deadline", "deadline",
+            "application_deadline": "deadline",
             "where_to_apply": "application",
-            "application_many_programs_possible", "application",
+            "application_many_programs_possible": "application",
             "application_many_programs_needed": "application",
             "application_many_programs_chance_increase": "application",
             "application_status": "application",
@@ -43,70 +50,96 @@ class ActionSetTopic(Action):
             "work_experience_accepted": "work experience",
             "swap_work_experience": "work experience",
         }
-        
-        current_intent = tracker.latest_message['intent'].get('name')
-        topic = intent_to_topic.get(current_intent, None)
-        
+
+        # Sicherer Zugriff auf den erkannten Intent
+        current_intent = tracker.latest_message.get("intent", {}).get("name")
+        topic = intent_to_topic.get(current_intent)
+
+        print("Latest message:", tracker.latest_message)
+        print("Erkannter Intent:", recognized_intent, "mit Konfidenz:", confidence)
+        print("Topic Slot:", topic)
+
+
         if topic:
             dispatcher.utter_message(text=f"I will remember that your topic is {topic}.")
             return [SlotSet("topic", topic)]
-        return []
+        else:
+            # Falls kein passendes Thema gefunden wurde, fragen wir nach.
+            dispatcher.utter_message(
+                text="I could not determine the topic from your input. Could you please clarify?"
+            )
+            return [SlotSet("topic", None)]
+
 
 class ActionRespondBasedOnTopic(Action):
-    def name(self):
+    def name(self) -> Text:
         return "action_respond_based_on_topic"
 
-    def run(self, dispatcher, tracker, domain):
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
         # Gespeichertes Thema aus dem Slot abrufen
         topic = tracker.get_slot("topic")
-        user_message = tracker.latest_message.get("text", "").strip().lower()
-
-        # Falls kein Thema gespeichert ist, nachfragen
         if not topic:
-            dispatcher.utter_message(text="I need more context. What topic are we discussing?")
+            dispatcher.utter_message(
+                text="I need more context. What topic are we discussing?"
+            )
             return []
 
-        # Nutzerfrage mit dem Thema kombinieren
-        combined_query = f"{topic} - {user_message}"
+        # Erkannten Intent und dessen Konfidenz aus der neuesten Nachricht abrufen
+        intent_info = tracker.latest_message.get("intent", {})
+        recognized_intent = intent_info.get("name")
+        confidence = intent_info.get("confidence", 0)
 
-        # NLU-Modell zur Intent-Erkennung verwenden
-        interpreter = RasaNLUInterpreter("models/nlu")  # Lade das trainierte NLU-Modell
-        parsed_result = interpreter.parse(combined_query)  # Analysiere die neue kombinierte Eingabe
-
-        # Intent und Konfidenz abrufen
-        recognized_intent = parsed_result.get("intent", {}).get("name", None)
-        confidence = parsed_result.get("intent", {}).get("confidence", 0)
-
-        # Mindestkonfidenz für gültige Erkennung setzen
+        # Mindestkonfidenz für eine sichere Erkennung
         if recognized_intent and confidence > 0.7:
-            dispatcher.utter_message(response=f"utter_{recognized_intent}")
+            # Hier wird versucht, die Antwort aus den domain-Templates zu ziehen.
+            # In aktuellen Rasa-Versionen kann dispatcher.utter_message(template=...) genutzt werden.
+            dispatcher.utter_message(template=f"utter_{recognized_intent}")
         else:
-            dispatcher.utter_message(text=f"I'm not sure about that. Could you clarify your question regarding {topic}?")
+            dispatcher.utter_message(
+                text=f"I'm not sure about that. Could you clarify your question regarding {topic}?"
+            )
 
         return []
 
+
 class HandleMultipleIntents(Action):
-    def name(self):
+    def name(self) -> Text:
         return "action_handle_multiple_intents"
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
-        # Liste der besten Intents aus der Nachricht
-        intents = tracker.latest_message["intent_ranking"]
-        
-        # Maximale Anzahl an Intents, die verarbeitet werden sollen
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+        # Abrufen der Liste der erkannten Intents (Intent-Ranking)
+        intents = tracker.latest_message.get("intent_ranking", [])
         max_intents = 3
 
-        # Antworten aus der `domain.yml` generieren
+        # Sicherstellen, dass im Domain-Dictionary Antworten hinterlegt sind
+        domain_responses = domain.get("responses", {})
+
         responses = []
         for intent in intents[:max_intents]:
-            response_key = f"utter_{intent['name']}"  # Antwort-Schlüssel aus domain.yml
-            if response_key in domain["responses"]:
-                responses.append(domain["responses"][response_key][0]["text"])  # Antwort abrufen
-        
-        # Antworten an den Benutzer senden
+            intent_name = intent.get("name")
+            response_key = f"utter_{intent_name}"
+            # Überprüfen, ob ein entsprechender Antwort-Template vorhanden ist
+            if response_key in domain_responses and domain_responses[response_key]:
+                # Hier nehmen wir den ersten Eintrag aus der Liste der Antworten
+                response_text = domain_responses[response_key][0].get("text", "")
+                if response_text:
+                    responses.append(response_text)
+
         if responses:
+            # Die gesammelten Antworten werden kombiniert und ausgegeben.
             dispatcher.utter_message(text=" ".join(responses))
         else:
-            dispatcher.utter_message(text="I don't know, if I got that right. Please try to ask question by question.")
-        
+            dispatcher.utter_message(
+                text="I don't know if I got that right. Please try to ask one question at a time."
+            )
         return []
