@@ -61,6 +61,7 @@ intents:
 - say_goodbye
 - negate
 - chitchat
+- general_followup
 # - ask_multiple_questions
 #- zustimmen
 
@@ -616,17 +617,8 @@ entities:
 
 slots:
   topic:
-    type: categorical
-    values:
-      - a-level
-      - guest auditor
-      - cv
-      - admission
-      - application
-      - aps
-      - eligibility
-      - gmat
-      - semester
+    type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: topic
@@ -634,3 +626,4 @@ slots:
 actions:
   - action_set_topic
   - action_handle_multiple_intents
+  - action_respond_based_on_topic
