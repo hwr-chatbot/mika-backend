@@ -353,44 +353,44 @@ nlu:
 
 - intent: study_without_a-level
   examples: |
-    - Can I study without a high school diploma?
+    - Can I study without a [high school diploma](topic)?
     - Can I study without a general higher education entrance qualification?
-    - Is it possible to study without an A-level?
-    - Can I enroll in university without a high school diploma?
-    - Can I go to HWR Berlin without a high school diploma?
-    - Do I need a high school diploma to study at HWR Berlin?
+    - Is it possible to study without an [A-level](topic)?
+    - Can I enroll in university without a [high school diploma](topic)?
+    - Can I go to HWR Berlin without a [high school diploma](topic)?
+    - Do I need a [high school diploma](topic) to study at HWR Berlin?
     - Can I be admitted to HWR without a general higher education entrance qualification?
-    - Can I apply to HWR Berlin without an A-level?
-    - Is it required to have a high school diploma to study at HWR?
+    - Can I apply to HWR Berlin without an [A-level](topic)?
+    - Is it required to have a [high school diploma](topic) to study at HWR?
     - Can I join HWR Berlin without a general higher education entrance qualification?
-    - Can I study at HWR Berlin without a high school diploma?
-    - Can I study without Abitur at HWR Berlin?
-    - Can I study without Abitur?
-    - Do I need an A-level to study at HWR Berlin?
-    - Can I be a student at HWR Berlin without a high school diploma?
-    - Is a high school diploma necessary for studying at HWR Berlin?
+    - Can I study at HWR Berlin without a [high school diploma](topci)?
+    - Can I study without [Abitur](topic) at HWR Berlin?
+    - Can I study without [Abitur](topic)?
+    - Do I need an [A-level](topic) to study at HWR Berlin?
+    - Can I be a student at HWR Berlin without a [high school diploma](topic)?
+    - Is a [high school diploma](topic) necessary for studying at HWR Berlin?
     - Can I study at HWR without having a general higher education entrance qualification?
-    - Do I need an A-level to enroll at HWR Berlin?
-    - Can I get into HWR Berlin without a high school diploma?
-    - Is a high school diploma mandatory for studying at HWR Berlin?
+    - Do I need an [A-level](topic) to enroll at HWR Berlin?
+    - Can I get into HWR Berlin without a [high school diploma](topic)?
+    - Is a [high school diploma](topic) mandatory for studying at HWR Berlin?
     - Can I attend HWR Berlin without a general higher education entrance qualification?
-    - Is it possible to study at HWR without a high school diploma?
-    - What if I don’t have a high school diploma, can I still study at HWR Berlin?
-    - Can I be accepted at HWR Berlin without an A-level?
-    - Is a high school diploma a must for studying at HWR Berlin?
+    - Is it possible to study at HWR without a [high school diploma](topic)?
+    - What if I don’t have a [high school diploma](topic), can I still study at HWR Berlin?
+    - Can I be accepted at HWR Berlin without an [A-level](topic)?
+    - Is a [high school diploma](topic) a must for studying at HWR Berlin?
     - Can I pursue a degree at HWR Berlin without a general higher education entrance qualification?
 
 - intent: english_courses
   examples: |
-    - What English degree programs are there?
-    - Are there any degree programs in English?
-    - Are there study programs in English?
+    - What [English degree programs](topic) are there?
+    - Are there any [degree programs in English](topic)?
+    - Are there [study programs in English](topic)?
     - Which degree programs are available in English?
-    - Is it possible to study an English course at the HWR?
-    - Does the HWR offer degree programs in English?
-    - Does the HWR also offer degree programs in English?
+    - Is it possible to study an [English course](topic) at the HWR?
+    - Does the HWR offer [degree programs in English](topic)?
+    - Does the HWR also offer [degree programs in English](topic)?
     - What courses are taught in English at HWR Berlin?
-    - Can I study in English at HWR Berlin?
+    - Can I [study in English](topic) at HWR Berlin?
     - Which programs can I take in English at HWR?
     - Are there any English-taught degree programs at HWR?
     - Do you have degree programs in English at HWR Berlin?
@@ -410,69 +410,69 @@ nlu:
 
 - intent: guest_auditor
   examples: |
-    - Can I register as a guest student?
-    - Can I take part in courses as a guest student?
-    - Can I register as a guest student?
+    - Can I register as a [guest student](topic)?
+    - Can I take part in courses as a [guest student](topic)?
+    - Can I register as a [guest student](topic)?
     - Can I register as a secondary listener?
     - Can I attend lectures as a guest?
     - Is it possible to attend lectures as a guest?
     - Can I enroll as a guest auditor?
-    - Can I participate in classes as a guest student?
-    - Can I join courses as a guest student?
-    - Can I sign up as a guest student at HWR Berlin?
-    - Is it possible to attend classes as a guest student at HWR?
+    - Can I participate in classes as a [guest student](topic)?
+    - Can I join courses as a [guest student](topic)?
+    - Can I sign up as a [guest student](topic) at HWR Berlin?
+    - Is it possible to attend classes as a [guest student](topic) at HWR?
     - Can I audit classes as a guest at HWR Berlin?
     - Can I attend HWR Berlin lectures as a guest?
-    - Is it allowed to be a guest student at HWR?
-    - Can I join HWR Berlin as a guest auditor?
-    - Is it possible to register as a guest auditor at HWR?
+    - Is it allowed to be a [guest student](topic) at HWR?
+    - Can I join HWR Berlin as a [guest auditor](topic)?
+    - Is it possible to register as a [guest auditor](topic) at HWR?
     - Can I participate as a secondary listener at HWR Berlin?
     - Can I sit in on lectures as a guest at HWR?
-    - Can I attend HWR Berlin courses as a guest student?
-    - Is it possible to be a guest student at HWR Berlin?
+    - Can I attend HWR Berlin courses as a [guest student](topic)?
+    - Is it possible to be a [guest student](topic) at HWR Berlin?
     - Can I take HWR Berlin classes as a guest?
     - Can I become a guest auditor at HWR?
-    - Can I sign up to be a guest student at HWR Berlin?
+    - Can I sign up to be a [guest student](topic) at HWR Berlin?
     - Can I enroll as a secondary listener at HWR?
 
 - intent: admission_requirement
   examples: |
-    - What are the admission requirements?
+    - What are the [admission](topic) requirements?
     - What are the entry requirements?
-    - What criteria are needed for admission?
-    - What qualifications are necessary for admission?
+    - What criteria are needed for [admission](topic)?
+    - What qualifications are necessary for [admission](topic)?
     - What do I need to be admitted?
-    - What are the prerequisites for admission?
-    - What are the conditions for admissions?
-    - What are the eligibility requirements for admission?
+    - What are the prerequisites for [admission](topic)?
+    - What are the conditions for [admission](topic)?
+    - What are the eligibility requirements for [admission](topic)?
     - What are the requirements to get admitted?
-    - What do I need to apply for admission?
-    - What qualifications do I need for admission?
-    - What are the standards for admission?
-    - What are the admission criteria?
-    - What qualifications must I have for admission?
-    - What are the academic requirements for admission?
-    - What are the needed qualifications for admission?
+    - What do I need to apply for [admission](topic)?
+    - What qualifications do I need for [admission](topic)?
+    - What are the standards for [admission](topic)?
+    - What are the [admission](topic) criteria?
+    - What qualifications must I have for [admission](topic)?
+    - What are the academic requirements for [admission](topic)?
+    - What are the needed qualifications for [admission](topic)?
     - What is required to be admitted?
-    - What conditions must be met for admission?
-    - What do I need to fulfill for admission?
-    - What are the admission rules?
-    - What do I need to qualify for admission?
-    - What must I have for admission?
-    - What are the necessary qualifications for admission?
+    - What conditions must be met for [admission](topic)?
+    - What do I need to fulfill for [admission](topic)?
+    - What are the [admission](topic) rules?
+    - What do I need to qualify for [admission](topic)?
+    - What must I have for [admission](topic)?
+    - What are the necessary qualifications for [admission](topic)?
     - What is needed to be admitted?
-    - What are the qualifications for admission?
+    - What are the qualifications for [admission](topic)?
 
 - intent: english_certificate
   examples: |
-    - Which English certificate is necessary?
+    - Which [English certificate](topic) is necessary?
     - What English certification is needed?
     - What English credential do I need?
     - Which English proficiency certificate is required?
-    - What level of English certificate is mandatory?
+    - What level of [English certificate](topic) is mandatory?
     - What English language qualification is required?
-    - What kind of English certificate is required?
-    - What English certificate do I need to apply?
+    - What kind of [English certificate](topic) is required?
+    - What [English certificate](topic) do I need to apply?
     - What English language certificate is needed?
     - What English proficiency level is necessary?
     - Which English test certificate is required?
@@ -482,104 +482,104 @@ nlu:
     - What English test do I need to take?
     - Which English language certificate do I need?
     - What English exam is required?
-    - Which English certificate must I have?
+    - Which [English certificate](topic) must I have?
     - What English language test is necessary?
     - What English proficiency certification do I need?
     - What English level certificate is needed?
     - What English exam certificate is required?
     - Which English qualification is mandatory?
-    - What English certificate should I have?
+    - What [English certificate](topic) should I have?
     - What English language exam do I need?
 
 - intent: motivational_letter
   examples: |
-    - Are there formal requirements for the motivational letter?
-    - What are the formal requirements for the motivational letter?
-    - Are there specific guidelines for the motivational letter?
-    - Are there any formal criteria for the motivational letter?
-    - What formatting rules apply to the motivational letter?
-    - Are there formal expectations for the motivational letter?
-    - Are there particular guidelines for writing the motivational letter?
-    - What are the structural requirements for the motivational letter?
-    - Are there any prescribed formats for the motivational letter?
-    - What are the guidelines for the motivational letter?
-    - Are there any specific rules for the motivational letter?
-    - What should be included in the motivational letter?
-    - Are there any format requirements for the motivational letter?
-    - What are the standards for the motivational letter?
-    - Are there any official criteria for the motivational letter?
-    - What are the formal expectations for the motivational letter?
-    - Are there any guidelines for structuring the motivational letter?
-    - What is the required format for the motivational letter?
-    - Do I need to follow a specific format for the motivational letter?
-    - What should the motivational letter include?
-    - Are there any specific instructions for the motivational letter?
-    - What are the official requirements for the motivational letter?
-    - Are there formal rules for the motivational letter?
-    - What format should I follow for the motivational letter?
-    - What structure is expected for the motivational letter?
+    - Are there formal requirements for the [[motivational letter](topic)](topic)?
+    - What are the formal requirements for the [motivational letter](topic)?
+    - Are there specific guidelines for the [motivational letter](topic)?
+    - Are there any formal criteria for the [motivational letter](topic)?
+    - What formatting rules apply to the [motivational letter](topic)?
+    - Are there formal expectations for the [motivational letter](topic)?
+    - Are there particular guidelines for writing the [motivational letter](topic)?
+    - What are the structural requirements for the [motivational letter](topic)?
+    - Are there any prescribed formats for the [motivational letter](topic)?
+    - What are the guidelines for the [motivational letter](topic)?
+    - Are there any specific rules for the [motivational letter](topic)?
+    - What should be included in the [motivational letter](topic)?
+    - Are there any format requirements for the [motivational letter](topic)?
+    - What are the standards for the [motivational letter](topic)?
+    - Are there any official criteria for the [motivational letter](topic)?
+    - What are the formal expectations for the [motivational letter](topic)?
+    - Are there any guidelines for structuring the [motivational letter](topic)?
+    - What is the required format for the [motivational letter](topic)?
+    - Do I need to follow a specific format for the [motivational letter](topic)?
+    - What should the [motivational letter](topic) include?
+    - Are there any specific instructions for the [motivational letter](topic)?
+    - What are the official requirements for the [motivational letter](topic)?
+    - Are there formal rules for the [motivational letter](topic)?
+    - What format should I follow for the [motivational letter](topic)?
+    - What structure is expected for the [motivational letter](topic)?
 
 - intent: cv
   examples: |
-    - What should my CV look like?
-    - How should my CV be formatted?
-    - What format should I use for my CV?
-    - How should I structure my CV?
-    - What is the preferred layout for a CV?
-    - What format is preferred for a CV?
-    - How do I properly format my CV?
-    - What structure should I follow for my CV?
-    - Are there any guidelines for CV formatting?
-    - How should I arrange my CV?
-    - What is the recommended CV format?
-    - What should the layout of my CV be?
-    - How should I organize my CV?
-    - What details should be included in my CV?
-    - What style should my CV have?
-    - Is there a specific format for the CV?
-    - How should the sections in my CV be arranged?
-    - What is the best way to format my CV?
-    - What layout should my CV follow?
-    - How should my CV be organized?
-    - What is the ideal format for a CV?
-    - How should I design my CV?
-    - What should the format of my CV be?
-    - How should I set up my CV?
-    - What are the formatting requirements for a CV?
+    - What should my [cv](topic) look like?
+    - How should my [cv](topic) be formatted?
+    - What format should I use for my [cv](topic)?
+    - How should I structure my [cv](topic)?
+    - What is the preferred layout for a [cv](topic)?
+    - What format is preferred for a [cv](topic)?
+    - How do I properly format my [cv](topic)?
+    - What structure should I follow for my [cv](topic)?
+    - Are there any guidelines for [cv](topic) formatting?
+    - How should I arrange my [cv](topic)?
+    - What is the recommended [cv](topic) format?
+    - What should the layout of my [cv](topic) be?
+    - How should I organize my [cv](topic)?
+    - What details should be included in my [cv](topic)?
+    - What style should my [cv](topic) have?
+    - Is there a specific format for the [cv](topic)?
+    - How should the sections in my [cv](topic) be arranged?
+    - What is the best way to format my [cv](topic)?
+    - What layout should my [cv](topic) follow?
+    - How should my [cv](topic) be organized?
+    - What is the ideal format for a [cv](topic)?
+    - How should I design my [cv](topic)?
+    - What should the format of my [cv](topic) be?
+    - How should I set up my [cv](topic)?
+    - What are the formatting requirements for a [cv](topic)?
 
 - intent: prerequisite_admission
   examples: |
-    - Are there any prerequisite courses required for admission to this program?
+    - Are there any prerequisite courses required for [admission](topic) to this program?
     - Are there specific courses I need to take before applying to this program?
-    - Are there prerequisite classes necessary for admission to this program?
+    - Are there prerequisite classes necessary for [admission](topic) to this program?
     - Are there required courses I need to have completed for entry into this program?
-    - Are there specific academic prerequisites for admission to this program?
+    - Are there specific academic prerequisites for [admission](topic) to this program?
     - Are there courses I must have taken beforehand to be eligible for this program?
     - Are there particular classes I need to have finished before applying to this program?
     - Do I need to complete any courses before applying to this program?
-    - Are there specific subjects I need to have studied for admission to this program?
+    - Are there specific subjects I need to have studied for [admission](topic) to this program?
     - Are there any classes I must take before being admitted to this program?
     - Are there required subjects for applying to this program?
     - Are there particular courses I need to have completed to apply to this program?
     - Are there specific academic requirements for entry into this program?
     - Must I complete certain classes before I can apply to this program?
     - Do I need to have taken certain courses for eligibility for this program?
-    - Are there mandatory classes needed for admission to this program?
+    - Are there mandatory classes needed for [admission](topic) to this program?
     - Are there specific courses required to qualify for this program?
     - Are there any academic courses needed before applying to this program?
-    - Are there courses that must be finished prior to admission to this program?
+    - Are there courses that must be finished prior to [admission](topic) to this program?
     - Are there prerequisite subjects for this program?
     - Are there any courses that are required before I can apply to this program?
     - Do I need any specific courses completed to be eligible for this program?
     - Are there classes I need to have taken before I can apply to this program?
-    - Are there any necessary courses for admission to this program?
+    - Are there any necessary courses for [admission](topic) to this program?
 
 - intent: masters_program
   examples: |
     - Can I apply for a master's program if I am currently finishing my undergraduate degree?
     - Can I apply for a master's program while still completing my undergraduate degree?
     - Is it possible to apply for a master's program if I haven't completed my undergraduate degree?
-    - Can I begin the application process for a master's program before finishing my undergraduate studies?
+    - Can I begin the [application](topic) process for a master's program before finishing my undergraduate studies?
     - Can I pursue a master's degree while I am still in the final stages of my undergraduate program?
     - Is it permissible to apply for a master's degree if I am nearing the completion of my bachelor's degree?
     - Am I allowed to seek admission to a master's program before officially completing my bachelor's degree?
@@ -589,14 +589,14 @@ nlu:
     - Is it allowed to apply for a master's degree while still an undergraduate student?
     - Can I apply for a master's program if I haven't yet graduated from my undergraduate degree?
     - Can I pursue a master's degree if I am still completing my bachelor's degree?
-    - Can I start the application for a master's program before my undergraduate degree is complete?
+    - Can I start the [application](topic) for a master's program before my undergraduate degree is complete?
     - Is it possible to apply for a master's program while nearing the end of my undergraduate studies?
     - Can I apply for a master's program if I am close to finishing my bachelor's degree?
     - Can I be admitted to a master's program before completing my bachelor's degree?
     - Is it allowed to apply for a master's program if I am finishing my undergraduate studies?
     - Can I apply for a master's program if my bachelor's degree is not yet complete?
-    - Can I start a master's degree application while still in my undergraduate program?
-    - Can I submit my application for a master's program if I am about to graduate from my bachelor's degree?
+    - Can I start a master's degree [application](topic) while still in my undergraduate program?
+    - Can I submit my [application](topic) for a master's program if I am about to graduate from my bachelor's degree?
     - Is it possible to seek admission to a master's program before my undergraduate graduation?
     - Can I apply for a master's degree if I am in the final year of my undergraduate studies?
     - Can I apply for a master's program while still an undergraduate?
@@ -610,24 +610,24 @@ nlu:
     - Which materials must I submit?
     - Which documents are necessary for submission?
     - What documentation is needed?
-    - What documents are needed for admission?
+    - What documents are needed for [admission](topic)?
     - Which documents should I prepare for submission?
-    - What documents are required for my application?
-    - What materials do I need to submit for admission?
-    - What paperwork is necessary for my application?
-    - Which documents do I need to hand in for admission?
+    - What documents are required for my [application](topic)?
+    - What materials do I need to submit for [admission](topic)?
+    - What paperwork is necessary for my [application](topic)?
+    - Which documents do I need to hand in for [admission](topic)?
     - What documents are required to apply?
-    - What documents must I provide for admission?
-    - What documentation do I need for my application?
-    - What documents should I submit for my application?
-    - Which documents are needed for my admission?
-    - What materials should I prepare for my application?
-    - Which documents are needed for the application process?
-    - What documentation is required for admission?
+    - What documents must I provide for [admission](topic)?
+    - What documentation do I need for my [application](topic)?
+    - What documents should I submit for my [application](topic)?
+    - Which documents are needed for my [admission](topic)?
+    - What materials should I prepare for my [application](topic)?
+    - Which documents are needed for the [application](topic) process?
+    - What documentation is required for [admission](topic)?
     - What documents are necessary to apply?
-    - What paperwork must I submit for my application?
-    - What documents are necessary for my application?
-    - Which documents are required for my admission process?
+    - What paperwork must I submit for my [application](topic)?
+    - What documents are necessary for my [application](topic)?
+    - Which documents are required for my [admission](topic) process?
 
 - intent: master_or_bachelor
   examples: |
@@ -660,22 +660,22 @@ nlu:
   examples: |
     - If I completed my Bachelor's degree at an international university in Germany, how do I apply?
     - How should I apply if I completed my Bachelor's degree at an international university in Germany?
-    - What is the application process for graduates of international universities in Germany?
+    - What is the [application](topic) process for graduates of international universities in Germany?
     - What are the steps to apply if I earned my Bachelor's degree from an international university in Germany?
-    - How should I proceed with my application if I graduated from a university in Germany with an international background?
-    - What is the application process like for someone who completed their Bachelor's degree at an international university in Germany?
+    - How should I proceed with my [application](topic) if I graduated from a university in Germany with an international background?
+    - What is the [application](topic) process like for someone who completed their Bachelor's degree at an international university in Germany?
     - How do I apply if my Bachelor's degree is from an international university in Germany?
     - What should I do to apply if I have a Bachelor's degree from an international university in Germany?
     - How can I apply with a Bachelor's degree from an international university in Germany?
     - What is the procedure to apply if I graduated from an international university in Germany?
-    - How do I proceed with my application if I have a Bachelor's from an international university in Germany?
-    - What are the application steps for a graduate from an international university in Germany?
+    - How do I proceed with my [application](topic) if I have a Bachelor's from an international university in Germany?
+    - What are the [application](topic) steps for a graduate from an international university in Germany?
     - How do I apply with a degree from an international university in Germany?
     - What process should I follow if my Bachelor's degree is from an international university in Germany?
-    - How do I submit my application if I have a Bachelor's degree from an international university in Germany?
+    - How do I submit my [application](topic) if I have a Bachelor's degree from an international university in Germany?
     - What is required to apply if I graduated from an international university in Germany?
     - How do I go about applying if I have a degree from an international university in Germany?
-    - What is the application procedure for someone with a Bachelor's from an international university in Germany?
+    - What is the [application](topic) procedure for someone with a Bachelor's from an international university in Germany?
     - How do I apply for a program if my degree is from an international university in Germany?
     - What should I know about applying with a Bachelor's degree from an international university in Germany?
     - What are the necessary steps to apply with a Bachelor's from an international university in Germany?
@@ -685,58 +685,58 @@ nlu:
 
 - intent: missed_deadline
   examples: |
-    - I missed the uni-assist application deadline, can I still apply?
-    - Is it possible to apply after missing the uni-assist application deadline?
-    - Can I still submit my application even though I missed the uni-assist deadline?
-    - Is there a chance to apply late for uni-assist after missing the deadline?
-    - What are my options if I missed the uni-assist application deadline?
-    - Am I able to apply late to uni-assist despite missing the application deadline?
-    - Is there a way to apply to uni-assist after the deadline has passed?
-    - What steps can I take if I missed the uni-assist application deadline?
-    - Can I apply to uni-assist even if I missed the initial application deadline?
-    - Can I still apply if I missed the uni-assist deadline?
-    - Is there any possibility to submit my application after the uni-assist deadline?
-    - What can I do if I missed the uni-assist application deadline?
+    - I missed the uni-assist application [deadline](topic), can I still apply?
+    - Is it possible to apply after missing the uni-assist application [deadline](topic)?
+    - Can I still submit my application even though I missed the uni-assist [deadline](topic)?
+    - Is there a chance to apply late for uni-assist after missing the [deadline](topic)?
+    - What are my options if I missed the uni-assist application [deadline](topic)?
+    - Am I able to apply late to uni-assist despite missing the application [deadline](topic)?
+    - Is there a way to apply to uni-assist after the [deadline](topic) has passed?
+    - What steps can I take if I missed the uni-assist application [deadline](topic)?
+    - Can I apply to uni-assist even if I missed the initial application [deadline](topic)?
+    - Can I still apply if I missed the uni-assist [deadline](topic)?
+    - Is there any possibility to submit my application after the uni-assist [deadline](topic)?
+    - What can I do if I missed the uni-assist application [deadline](topic)?
     - Can I submit a late application to uni-assist?
-    - Are there options for applying to uni-assist after the deadline?
-    - Is it possible to send my application after the uni-assist deadline?
-    - What should I do if I missed the uni-assist deadline?
-    - Can I still be considered if I apply after the uni-assist deadline?
+    - Are there options for applying to uni-assist after the [deadline](topic)?
+    - Is it possible to send my application after the uni-assist [deadline](topic)?
+    - What should I do if I missed the uni-assist [deadline](topic)?
+    - Can I still be considered if I apply after the uni-assist [deadline](topic)?
     - Is late submission allowed for uni-assist applications?
-    - What happens if I miss the uni-assist application deadline?
-    - Are there any exceptions for applying after the uni-assist deadline?
-    - Can I request an extension if I missed the uni-assist application deadline?
-    - Is it feasible to apply after the uni-assist deadline has passed?
-    - Can I still get admitted if I missed the uni-assist application deadline?
-    - What are my options for applying if I missed the uni-assist deadline?
+    - What happens if I miss the uni-assist application [deadline](topic)?
+    - Are there any exceptions for applying after the uni-assist [deadline](topic)?
+    - Can I request an extension if I missed the uni-assist application [deadline](topic)?
+    - Is it feasible to apply after the uni-assist [deadline](topic) has passed?
+    - Can I still get admitted if I missed the uni-assist application [deadline](topic)?
+    - What are my options for applying if I missed the uni-assist [deadline](topic)?
 
 - intent: application_deadline
   examples: |
-    - Which application deadline is applicable to me?
-    - What is the relevant application deadline for me?
-    - Which application deadline should I follow?
-    - Which deadline applies to my application?
-    - What is the appropriate deadline for my application?
-    - Which application deadline is relevant to my situation?
-    - Which deadline should I adhere to for my application?
-    - What is the applicable deadline for my application?
-    - Which deadline is appropriate for me to apply?
-    - What is the correct application deadline for me?
-    - What deadline do I need to meet for my application?
-    - Which deadline is relevant for my application process?
-    - What is the specific deadline for my application?
-    - Which deadline should I consider for my application?
-    - What is the exact application deadline for me?
-    - Which application deadline do I need to follow?
-    - Which application deadline fits my situation?
-    - What is the relevant deadline for submitting my application?
-    - What is the right deadline for my application?
-    - Which submission deadline applies to me?
-    - What application deadline must I follow?
-    - Which application deadline applies to my case?
-    - What is the necessary deadline for my application?
-    - Which application deadline should I take into account?
-    - Which deadline is relevant for me to submit my application?
+    - Which application [deadline](topic) is applicable to me?
+    - What is the relevant application [deadline](topic) for me?
+    - Which application [deadline](topic) should I follow?
+    - Which [deadline](topic) applies to my application?
+    - What is the appropriate [deadline](topic) for my application?
+    - Which application [deadline](topic) is relevant to my situation?
+    - Which [deadline](topic) should I adhere to for my application?
+    - What is the applicable [deadline](topic) for my application?
+    - Which [deadline](topic) is appropriate for me to apply?
+    - What is the correct application [deadline](topic) for me?
+    - What [deadline](topic) do I need to meet for my application?
+    - Which [deadline](topic) is relevant for my application process?
+    - What is the specific [deadline](topic) for my application?
+    - Which [deadline](topic) should I consider for my application?
+    - What is the exact application [deadline](topic) for me?
+    - Which application [deadline](topic) do I need to follow?
+    - Which application [deadline](topic) fits my situation?
+    - What is the relevant [deadline](topic) for submitting my application?
+    - What is the right [deadline](topic) for my application?
+    - Which submission [deadline](topic) applies to me?
+    - What application [deadline](topic) must I follow?
+    - Which application [deadline](topic) applies to my case?
+    - What is the necessary [deadline](topic) for my application?
+    - Which application [deadline](topic) should I take into account?
+    - Which [deadline](topic) is relevant for me to submit my application?
 
 - intent: where_to_apply
   examples: |
@@ -820,29 +820,29 @@ nlu:
 
 - intent: application_many_programs_chance_increase
   examples: |
-    - Will it increase my chances of admission if I apply for more than one programme?
-    - Does applying for multiple programmes improve my chances of admission?
-    - Will my chances of admission be higher if I apply for more than one programme?
+    - Will it increase my chances of [admission](topic) if I apply for more than one programme?
+    - Does applying for multiple programmes improve my chances of [admission](topic)?
+    - Will my chances of [admission](topic) be higher if I apply for more than one programme?
     - Does applying to multiple programmes enhance my chances of being accepted?
-    - Is there a greater likelihood of admission if I apply to multiple programmes?
+    - Is there a greater likelihood of [admission](topic) if I apply to multiple programmes?
     - Will applying for several programmes increase my chances of being admitted?
-    - Do I have a better chance of admission if I apply to more than one programme?
-    - Will applying for multiple programmes improve my admission prospects?
-    - Is it advantageous to apply for more than one programme to increase my chances of admission?
-    - Will applying to multiple programs boost my chances of admission?
+    - Do I have a better chance of [admission](topic) if I apply to more than one programme?
+    - Will applying for multiple programmes improve my [admission](topic) prospects?
+    - Is it advantageous to apply for more than one programme to increase my chances of [admission](topic)?
+    - Will applying to multiple programs boost my chances of [admission](topic)?
     - Does submitting applications for several programs increase my likelihood of acceptance?
     - Will my chances be better if I apply for more than one program?
-    - Is it beneficial to apply for multiple programs to enhance my chances of admission?
+    - Is it beneficial to apply for multiple programs to enhance my chances of [admission](topic)?
     - Does applying to more than one program increase my chances of getting in?
-    - Will my odds of admission improve if I apply for multiple programs?
-    - Is there an advantage in applying for several programs to improve my admission chances?
+    - Will my odds of [admission](topic) improve if I apply for multiple programs?
+    - Is there an advantage in applying for several programs to improve my [admission](topic) chances?
     - Does applying for various programs help in increasing my chances of acceptance?
     - Will my likelihood of being admitted be higher if I apply to multiple programs?
     - Is it helpful to apply for more than one program to increase my chances of being accepted?
-    - Will submitting applications to several programs improve my chances of admission?
+    - Will submitting applications to several programs improve my chances of [admission](topic)?
     - Do I stand a better chance of getting admitted if I apply for multiple programs?
     - Will my chances of being accepted be greater if I apply to more than one program?
-    - Is it better to apply for multiple programs to boost my admission chances?
+    - Is it better to apply for multiple programs to boost my [admission](topic) chances?
     - Does applying for several programs increase my chances of getting in?
 
 - intent: how_many_courses
@@ -929,87 +929,87 @@ nlu:
 
 - intent: aps_hand_in_late
   examples: |
-    - APS takes very long. Can I hand it in late?
-    - Can I submit my APS certificate after the deadline?
-    - Is it possible to turn in my APS certificate after the due date?
-    - Am I allowed to submit my APS assessment late?
-    - Can I provide my APS documentation past the specified deadline?
-    - Is there flexibility in the submission deadline for the APS certificate?
-    - Is it acceptable to hand in my APS results after the deadline?
-    - Can I deliver my APS evaluation at a later time?
-    - Is there a grace period for submitting my APS certificate?
-    - Can I submit my APS certificate late due to processing delays?
-    - Is it okay to hand in my APS certificate after the deadline?
-    - Can I send in my APS documentation after the due date?
-    - Is it possible to provide my APS results past the deadline?
-    - Can I turn in my APS certificate late?
-    - Is there any leniency in the deadline for submitting my APS certificate?
-    - Can I submit my APS assessment past the specified deadline?
-    - Is late submission of my APS certificate permitted?
-    - Can I hand in my APS documentation at a later date?
-    - Is it acceptable to submit my APS results after the due date?
-    - Can I provide my APS evaluation after the deadline?
-    - Is there any allowance for late submission of my APS certificate?
-    - Can I hand in my APS assessment after the deadline has passed?
-    - Is it possible to submit my APS certificate beyond the deadline?
-    - Can I submit my APS documentation after the specified due date?
-    - Is there any flexibility for submitting my APS certificate late?
+    - [aps](topic) takes very long. Can I hand it in late?
+    - Can I submit my [aps](topic) certificate after the deadline?
+    - Is it possible to turn in my [aps](topic) certificate after the due date?
+    - Am I allowed to submit my [aps](topic) assessment late?
+    - Can I provide my [aps](topic) documentation past the specified deadline?
+    - Is there flexibility in the submission deadline for the [aps](topic) certificate?
+    - Is it acceptable to hand in my [aps](topic) results after the deadline?
+    - Can I deliver my [aps](topic) evaluation at a later time?
+    - Is there a grace period for submitting my [aps](topic) certificate?
+    - Can I submit my [aps](topic) certificate late due to processing delays?
+    - Is it okay to hand in my [aps](topic) certificate after the deadline?
+    - Can I send in my [aps](topic) documentation after the due date?
+    - Is it possible to provide my [aps](topic) results past the deadline?
+    - Can I turn in my [aps](topic) certificate late?
+    - Is there any leniency in the deadline for submitting my [aps](topic) certificate?
+    - Can I submit my [aps](topic) assessment past the specified deadline?
+    - Is late submission of my [aps](topic) certificate permitted?
+    - Can I hand in my [aps](topic) documentation at a later date?
+    - Is it acceptable to submit my [aps](topic) results after the due date?
+    - Can I provide my [aps](topic) evaluation after the deadline?
+    - Is there any allowance for late submission of my [aps](topic) certificate?
+    - Can I hand in my [aps](topic) assessment after the deadline has passed?
+    - Is it possible to submit my [aps](topic) certificate beyond the deadline?
+    - Can I submit my [aps](topic) documentation after the specified due date?
+    - Is there any flexibility for submitting my [aps](topic) certificate late?
 
 - intent: aps_needed
   examples: |
-    - Do I need APS?
-    - Is APS required for my application?
-    - Do I have to provide APS?
-    - Do I need to submit APS?
-    - Is APS mandatory?
-    - Do I need an APS certificate?
-    - Is an APS certificate required for my application?
-    - Do I need to provide an APS certificate?
-    - Am I required to have an APS certificate?
-    - Is it necessary to obtain an APS certificate?
-    - Must I submit an APS certificate?
-    - Is an APS certificate mandatory for admission?
-    - Do I need to include an APS certificate in my application?
-    - Is an APS certificate needed for my application process?
-    - Do I need to provide APS for my application?
-    - Is it compulsory to have an APS certificate?
-    - Is APS a required document for my application?
-    - Is an APS certificate a must for my application?
-    - Do I need to obtain an APS certificate for my application?
-    - Is it obligatory to submit an APS certificate?
-    - Is an APS certificate essential for my application?
-    - Do I need to get an APS certificate for admission?
-    - Do I need an APS certificate to apply?
-    - Is having an APS certificate a requirement?
-    - Must I include an APS certificate with my application?
+    - Do I need [aps](topic)?
+    - Is [aps](topic) required for my application?
+    - Do I have to provide [aps](topic)?
+    - Do I need to submit [aps](topic)?
+    - Is [aps](topic) mandatory?
+    - Do I need an [aps](topic) certificate?
+    - Is an [aps](topic) certificate required for my application?
+    - Do I need to provide an [aps](topic) certificate?
+    - Am I required to have an [aps](topic) certificate?
+    - Is it necessary to obtain an [aps](topic) certificate?
+    - Must I submit an [aps](topic) certificate?
+    - Is an [aps](topic) certificate mandatory for admission?
+    - Do I need to include an [aps](topic) certificate in my application?
+    - Is an [aps](topic) certificate needed for my application process?
+    - Do I need to provide [aps](topic) for my application?
+    - Is it compulsory to have an [aps](topic) certificate?
+    - Is [aps](topic) a required document for my application?
+    - Is an [aps](topic) certificate a must for my application?
+    - Do I need to obtain an [aps](topic) certificate for my application?
+    - Is it obligatory to submit an [aps](topic) certificate?
+    - Is an [aps](topic) certificate essential for my application?
+    - Do I need to get an [aps](topic) certificate for admission?
+    - Do I need an [aps](topic) certificate to apply?
+    - Is having an [aps](topic) certificate a requirement?
+    - Must I include an [aps](topic) certificate with my application?
 
 - intent: whats_aps
   examples: |
-    - What's APS?
-    - What is the APS certificate?
-    - Can you explain what the APS certificate is?
-    - What does the APS certificate entail?
-    - What is the purpose of the APS certificate?
-    - Could you provide details about the APS certificate?
-    - What information does the APS certificate include?
-    - What exactly is an APS certificate?
-    - What is the role of the APS certificate in the application process?
-    - What does an APS certificate signify?
-    - What is the meaning of an APS certificate?
-    - Can you tell me what the APS certificate is?
-    - What is involved in getting an APS certificate?
-    - Why do I need an APS certificate?
-    - What does APS stand for?
-    - What is the function of the APS certificate?
-    - What are the details of the APS certificate?
-    - Can you describe the APS certificate?
-    - What does the APS certificate represent?
-    - What is the APS certificate used for?
-    - What is the significance of the APS certificate?
-    - What does the APS certificate verify?
-    - What is the importance of the APS certificate in my application?
-    - Why is the APS certificate required?
-    - What are the key aspects of the APS certificate?
+    - What's [aps](topic)?
+    - What is the [aps](topic) certificate?
+    - Can you explain what the [aps](topic) certificate is?
+    - What does the [aps](topic) certificate entail?
+    - What is the purpose of the [aps](topic) certificate?
+    - Could you provide details about the [aps](topic) certificate?
+    - What information does the [aps](topic) certificate include?
+    - What exactly is an [aps](topic) certificate?
+    - What is the role of the [aps](topic) certificate in the application process?
+    - What does an [aps](topic) certificate signify?
+    - What is the meaning of an [aps](topic) certificate?
+    - Can you tell me what the [aps](topic) certificate is?
+    - What is involved in getting an [aps](topic) certificate?
+    - Why do I need an [aps](topic) certificate?
+    - What does [aps](topic) stand for?
+    - What is the function of the [aps](topic) certificate?
+    - What are the details of the [aps](topic) certificate?
+    - Can you describe the [aps](topic) certificate?
+    - What does the [aps](topic) certificate represent?
+    - What is the [aps](topic) certificate used for?
+    - What is the significance of the [aps](topic) certificate?
+    - What does the [aps](topic) certificate verify?
+    - What is the importance of the [aps](topic) certificate in my application?
+    - Why is the [aps](topic) certificate required?
+    - What are the key aspects of the [aps](topic) certificate?
 
 - intent: consecutive_master
   examples: |
@@ -1040,45 +1040,45 @@ nlu:
 
 - intent: duolingo_accepted
   examples: |
-    - Do you accept Duolingo certificates?
-    - Is Duolingo accepted?
-    - Do you recognize Duolingo English Test certificates?
-    - Are Duolingo certificates accepted for admission?
-    - Is the Duolingo English Test valid for your application process?
-    - Can I submit a Duolingo certificate as proof of English proficiency?
-    - Do you accept the Duolingo English Test for language requirements?
-    - Is a Duolingo certificate acceptable for your language proficiency criteria?
-    - Will you accept Duolingo English Test results for admission?
-    - Are Duolingo English Test certificates recognized by your institution?
-    - Do you acknowledge Duolingo certificates for admission purposes?
-    - Is the Duolingo English Test certificate valid for applying?
-    - Can I use a Duolingo certificate to meet English proficiency requirements?
-    - Does your institution recognize Duolingo English Test scores?
-    - Are Duolingo English Test results accepted for language requirements?
-    - Is the Duolingo English Test acceptable for your language proficiency needs?
-    - Will a Duolingo certificate be accepted as proof of English proficiency?
-    - Is Duolingo an accepted English proficiency test at your institution?
-    - Can I use Duolingo test results for my English language proof?
-    - Are Duolingo English Test scores valid for your application process?
-    - Is the Duolingo English Test recognized for admission?
-    - Will you consider Duolingo English Test certificates for language proficiency?
-    - Are Duolingo certificates acknowledged by your university?
-    - Can I provide a Duolingo English Test certificate for my application?
+    - Do you accept [duolingo](topic) certificates?
+    - Is [duolingo](topic) accepted?
+    - Do you recognize [duolingo](topic) English Test certificates?
+    - Are [duolingo](topic) certificates accepted for admission?
+    - Is the [duolingo](topic) English Test valid for your application process?
+    - Can I submit a [duolingo](topic) certificate as proof of English proficiency?
+    - Do you accept the [duolingo](topic) English Test for language requirements?
+    - Is a [duolingo](topic) certificate acceptable for your language proficiency criteria?
+    - Will you accept [duolingo](topic) English Test results for admission?
+    - Are [duolingo](topic) English Test certificates recognized by your institution?
+    - Do you acknowledge [duolingo](topic) certificates for admission purposes?
+    - Is the [duolingo](topic) English Test certificate valid for applying?
+    - Can I use a [duolingo](topic) certificate to meet English proficiency requirements?
+    - Does your institution recognize [duolingo](topic) English Test scores?
+    - Are [duolingo](topic) English Test results accepted for language requirements?
+    - Is the [duolingo](topic) English Test acceptable for your language proficiency needs?
+    - Will a [duolingo](topic) certificate be accepted as proof of English proficiency?
+    - Is [duolingo](topic) an accepted English proficiency test at your institution?
+    - Can I use [duolingo](topic) test results for my English language proof?
+    - Are [duolingo](topic) English Test scores valid for your application process?
+    - Is the [duolingo](topic) English Test recognized for admission?
+    - Will you consider [duolingo](topic) English Test certificates for language proficiency?
+    - Are [duolingo](topic) certificates acknowledged by your university?
+    - Can I provide a [duolingo](topic) English Test certificate for my application?
 
 - intent: eligibility
   examples: |
     - Am I eligible to apply?
-    - Do I meet the eligibility criteria to apply?
+    - Do I meet the [eligibility](topic) criteria to apply?
     - Am I eligible to submit an application?
     - Am I eligible to apply with my current qualifications?
     - Can I apply with my current qualifications?
     - Do my qualifications make me eligible to apply?
     - Am I qualified to submit an application?
     - Do I qualify to apply?
-    - Do my credentials meet the eligibility requirements for applying?
+    - Do my credentials meet the [eligibility](topic) requirements for applying?
     - Am I allowed to apply with my current credentials?
     - Are my qualifications sufficient to be eligible to apply?
-    - Do I fulfill the eligibility criteria for application?
+    - Do I fulfill the [eligibility](topic) criteria for application?
     - Can I apply given my current qualifications?
     - Are my current qualifications enough to be eligible to apply?
     - Am I eligible for application with my existing qualifications?
@@ -1094,84 +1094,84 @@ nlu:
 
 - intent: eligibility_check
   examples: |
-    - Can you check my eligibility?
-    - Where can I check my eligibility?
+    - Can you check my [eligibility](topic)?
+    - Where can I check my [eligibility](topic)?
     - Would I be eligible to apply?
-    - Could you verify my eligibility to apply?
+    - Could you verify my [eligibility](topic) to apply?
     - Can you assess if I am eligible to apply?
-    - Could you confirm whether I meet the eligibility criteria?
+    - Could you confirm whether I meet the [eligibility](topic) criteria?
     - Can you determine if I am eligible to submit an application?
     - Could you review my qualifications to see if I am eligible?
-    - Can you evaluate my eligibility for application?
+    - Can you evaluate my [eligibility](topic) for application?
     - Could you check if I meet the requirements to apply?
-    - Can you verify my qualifications for eligibility?
+    - Can you verify my qualifications for [eligibility](topic)?
     - Can you tell me if I am eligible to apply?
-    - Can you confirm my eligibility to apply?
-    - Could you check my qualifications for eligibility?
+    - Can you confirm my [eligibility](topic) to apply?
+    - Could you check my qualifications for [eligibility](topic)?
     - Can you confirm if I meet the criteria to apply?
     - Can you verify if I qualify to apply?
-    - Can you assess my eligibility to apply?
+    - Can you assess my [eligibility](topic) to apply?
     - Could you determine if I am qualified to apply?
     - Can you review if I am eligible to apply?
     - Could you evaluate if I meet the application requirements?
     - Can you confirm if my qualifications make me eligible to apply?
-    - Could you check my eligibility status?
-    - Can you assess my qualifications for application eligibility?
+    - Could you check my [eligibility](topic) status?
+    - Can you assess my qualifications for application [eligibility](topic)?
     - Can you verify if I am eligible to apply with my qualifications?
 
 - intent: eligibility_master
   examples: |
     - Am I eligible for a master's program?
-    - What are the basic eligibility requirements for your master's programs?
-    - What are the standard eligibility conditions for your master's programs?
+    - What are the basic [eligibility](topic) requirements for your master's programs?
+    - What are the standard [eligibility](topic) conditions for your master's programs?
     - What are the main requirements to be eligible for your master's programs?
     - What GPA is required to be eligible for the master's program?
     - Do I qualify for a master's program?
-    - What are the eligibility criteria for the master's programs?
+    - What are the [eligibility](topic) criteria for the master's programs?
     - What qualifications do I need to apply for a master's program?
     - What are the entry requirements for your master's programs?
     - What academic qualifications are necessary for a master's program?
-    - What is the minimum GPA needed for eligibility for a master's program?
+    - What is the minimum GPA needed for [eligibility](topic) for a master's program?
     - What do I need to be eligible for your master's programs?
     - What qualifications make me eligible for a master's program?
     - What are the prerequisites for applying to a master's program?
     - What GPA do I need to qualify for a master's program?
-    - What are the essential eligibility requirements for a master's program?
+    - What are the essential [eligibility](topic) requirements for a master's program?
     - What criteria must I meet to be eligible for a master's program?
-    - What academic standards are required for eligibility for a master's program?
-    - What are the key eligibility requirements for a master's program?
+    - What academic standards are required for [eligibility](topic) for a master's program?
+    - What are the key [eligibility](topic) requirements for a master's program?
     - What GPA is necessary to apply for a master's program?
     - What qualifications must I have to be eligible for a master's program?
-    - What are the eligibility guidelines for the master's programs?
+    - What are the [eligibility](topic) guidelines for the master's programs?
     - What GPA is needed to be considered for a master's program?
-    - What are the academic requirements for eligibility for a master's program?
+    - What are the academic requirements for [eligibility](topic) for a master's program?
 
 - intent: eligibility_check_who
   examples: |
-    - Who can check my eligibility?
+    - Who can check my [eligibility](topic)?
     - Can I send the certificate to someone who can say if it is valid?
     - Can you check my documents and let me know if I am eligible?
-    - Who is responsible for verifying my eligibility?
-    - Who can assess my eligibility for the program?
-    - Who can determine if I meet the eligibility criteria?
-    - Who should I contact to check my eligibility?
+    - Who is responsible for verifying my [eligibility](topic)?
+    - Who can assess my [eligibility](topic) for the program?
+    - Who can determine if I meet the [eligibility](topic) criteria?
+    - Who should I contact to check my [eligibility](topic)?
     - Who can confirm whether I am eligible to apply?
-    - Who can review my qualifications for eligibility?
-    - Who can evaluate my eligibility for the application process?
-    - Who is the right person to verify my eligibility?
-    - Who can I talk to about checking my eligibility?
+    - Who can review my qualifications for [eligibility](topic)?
+    - Who can evaluate my [eligibility](topic) for the application process?
+    - Who is the right person to verify my [eligibility](topic)?
+    - Who can I talk to about checking my [eligibility](topic)?
     - Who can help me verify if I am eligible?
-    - Who can I reach out to for eligibility verification?
-    - Who can I send my documents to for eligibility checking?
-    - Who can provide an assessment of my eligibility?
-    - Who can I contact for confirmation of my eligibility?
-    - Who can I ask to verify my qualifications for eligibility?
-    - Who is in charge of checking eligibility for the program?
-    - Who can give me a definitive answer on my eligibility?
-    - Who can I consult to check if I meet the eligibility criteria?
-    - Who is the appropriate person to check my eligibility?
-    - Who can I send my documents to for an eligibility review?
-    - Who can provide confirmation of my eligibility status?
+    - Who can I reach out to for [eligibility](topic) verification?
+    - Who can I send my documents to for [eligibility](topic) checking?
+    - Who can provide an assessment of my [eligibility](topic)?
+    - Who can I contact for confirmation of my [eligibility](topic)?
+    - Who can I ask to verify my qualifications for [eligibility](topic)?
+    - Who is in charge of checking [eligibility](topic) for the program?
+    - Who can give me a definitive answer on my [eligibility](topic)?
+    - Who can I consult to check if I meet the [eligibility](topic) criteria?
+    - Who is the appropriate person to check my [eligibility](topic)?
+    - Who can I send my documents to for an [eligibility](topic) review?
+    - Who can provide confirmation of my [eligibility](topic) status?
 
 - intent: no_relevant_studies
   examples: |
@@ -1202,106 +1202,106 @@ nlu:
 
 - intent: whats_gmat
   examples: |
-    - What is GMAT?
-    - What is GMAT Testscore?
-    - What is a GMAT test?
-    - What exactly is GMAT?
-    - Can you explain what the GMAT is?
-    - What is the purpose of the GMAT?
-    - What kind of exam is the GMAT?
-    - What does the GMAT measure?
-    - What is the GMAT used for?
-    - Can you tell me what the GMAT is?
-    - What does GMAT stand for?
-    - What is involved in the GMAT?
-    - What is tested in the GMAT?
-    - What areas does the GMAT cover?
-    - What do GMAT scores indicate?
-    - What does a GMAT score represent?
-    - What is the GMAT exam all about?
-    - What are GMAT scores used for?
-    - What is the significance of the GMAT?
-    - Why is the GMAT important?
-    - What does GMAT test for?
-    - How is the GMAT structured?
-    - What sections are included in the GMAT?
-    - What does one need to know about the GMAT?
+    - What is [gmat](topic)?
+    - What is [gmat](topic) Testscore?
+    - What is a [gmat](topic) test?
+    - What exactly is [gmat](topic)?
+    - Can you explain what the [gmat](topic) is?
+    - What is the purpose of the [gmat](topic)?
+    - What kind of exam is the [gmat](topic)?
+    - What does the [gmat](topic) measure?
+    - What is the [gmat](topic) used for?
+    - Can you tell me what the [gmat](topic) is?
+    - What does [gmat](topic) stand for?
+    - What is involved in the [gmat](topic)?
+    - What is tested in the [gmat](topic)?
+    - What areas does the [gmat](topic) cover?
+    - What do [gmat](topic) scores indicate?
+    - What does a [gmat](topic) score represent?
+    - What is the [gmat](topic) exam all about?
+    - What are [gmat](topic) scores used for?
+    - What is the significance of the [gmat](topic)?
+    - Why is the [gmat](topic) important?
+    - What does [gmat](topic) test for?
+    - How is the [gmat](topic) structured?
+    - What sections are included in the [gmat](topic)?
+    - What does one need to know about the [gmat](topic)?
 
 - intent: gmat_needed
   examples: |
-    - Do I need GMAT to apply?
-    - What GMAT score is required to apply?
-    - Is GMAT mandatory?
-    - Do I have to submit a GMAT test score?
-    - Is GMAT required to apply?
-    - Can I apply without GMAT?
-    - Is a GMAT score necessary for my application?
-    - Must I take the GMAT to apply?
-    - Do I need to provide a GMAT score?
-    - Is the GMAT a required test for admission?
-    - Am I required to take the GMAT?
-    - Is it possible to apply without a GMAT score?
-    - What is the minimum GMAT score needed to apply?
-    - Is GMAT compulsory for application?
-    - Do I need a GMAT score to be eligible to apply?
-    - Is it mandatory to have a GMAT score for application?
-    - Can I submit my application without a GMAT score?
-    - Is a GMAT test score a requirement for application?
-    - What GMAT score do I need for admission?
-    - Is taking the GMAT necessary for applying?
-    - Is a GMAT score part of the application requirements?
-    - Do all applicants need to submit a GMAT score?
-    - Is GMAT a required criterion for applying?
-    - Can I proceed with my application without a GMAT score?
+    - Do I need [gmat](topic) to apply?
+    - What [gmat](topic) score is required to apply?
+    - Is [gmat](topic) mandatory?
+    - Do I have to submit a [gmat](topic) test score?
+    - Is [gmat](topic) required to apply?
+    - Can I apply without [gmat](topic)?
+    - Is a [gmat](topic) score necessary for my application?
+    - Must I take the [gmat](topic) to apply?
+    - Do I need to provide a [gmat](topic) score?
+    - Is the [gmat](topic) a required test for admission?
+    - Am I required to take the [gmat](topic)?
+    - Is it possible to apply without a [gmat](topic) score?
+    - What is the minimum [gmat](topic) score needed to apply?
+    - Is [gmat](topic) compulsory for application?
+    - Do I need a [gmat](topic) score to be eligible to apply?
+    - Is it mandatory to have a [gmat](topic) score for application?
+    - Can I submit my application without a [gmat](topic) score?
+    - Is a [gmat](topic) test score a requirement for application?
+    - What [gmat](topic) score do I need for admission?
+    - Is taking the [gmat](topic) necessary for applying?
+    - Is a [gmat](topic) score part of the application requirements?
+    - Do all applicants need to submit a [gmat](topic) score?
+    - Is [gmat](topic) a required criterion for applying?
+    - Can I proceed with my application without a [gmat](topic) score?
 
 - intent: hwr_gmat_test
   examples: |
-    - Does HWR give out GMAT tests?
-    - Does HWR administer GMAT tests?
-    - Can I take the GMAT test at HWR?
-    - Is HWR a testing center for the GMAT?
-    - Does HWR offer GMAT testing services?
-    - Are GMAT exams conducted at HWR?
-    - Can I schedule a GMAT test at HWR?
-    - Is it possible to take the GMAT at HWR?
-    - Can I book a GMAT test at HWR?
-    - Does HWR facilitate GMAT testing?
-    - Are there GMAT test sessions available at HWR?
-    - Can I register for a GMAT test at HWR?
-    - Does HWR host GMAT exams?
-    - Is HWR an authorized center for GMAT testing?
-    - Can I take my GMAT exam at HWR?
-    - Does HWR provide facilities for taking the GMAT?
-    - Is it possible to book a GMAT test slot at HWR?
-    - Are GMAT test dates available at HWR?
-    - Does HWR have the capability to conduct GMAT tests?
-    - Can I take the GMAT test on campus at HWR?
+    - Does HWR give out [gmat](topic) tests?
+    - Does HWR administer [gmat](topic) tests?
+    - Can I take the [gmat](topic) test at HWR?
+    - Is HWR a testing center for the [gmat](topic)?
+    - Does HWR offer [gmat](topic) testing services?
+    - Are [gmat](topic) exams conducted at HWR?
+    - Can I schedule a [gmat](topic) test at HWR?
+    - Is it possible to take the [gmat](topic) at HWR?
+    - Can I book a [gmat](topic) test at HWR?
+    - Does HWR facilitate [gmat](topic) testing?
+    - Are there [gmat](topic) test sessions available at HWR?
+    - Can I register for a [gmat](topic) test at HWR?
+    - Does HWR host [gmat](topic) exams?
+    - Is HWR an authorized center for [gmat](topic) testing?
+    - Can I take my [gmat](topic) exam at HWR?
+    - Does HWR provide facilities for taking the [gmat](topic)?
+    - Is it possible to book a [gmat](topic) test slot at HWR?
+    - Are [gmat](topic) test dates available at HWR?
+    - Does HWR have the capability to conduct [gmat](topic) tests?
+    - Can I take the [gmat](topic) test on campus at HWR?
 
 - intent: gre_instead_gmat
   examples: |
-    - Can I submit GRE scores instead of GMAT?
-    - Do you accept GRE instead of GMAT?
-    - Is the GRE accepted in place of the GMAT?
-    - Will you consider GRE scores instead of GMAT scores?
-    - Do you accept the GRE as an alternative to the GMAT?
-    - Can I use my GRE results instead of GMAT for your program?
-    - Does your institution accept GRE in lieu of GMAT?
-    - Is it possible to apply with GRE scores instead of GMAT?
-    - Are GRE scores valid for applications in place of GMAT scores?
-    - I am from Iran. Can I hand in GRE instead of GMAT?
-    - Can I use GRE scores instead of GMAT for admission?
-    - Is GRE accepted as a substitute for GMAT?
-    - Are GRE scores interchangeable with GMAT scores for your program?
-    - Can I apply with GRE scores rather than GMAT?
-    - Is submitting GRE scores instead of GMAT acceptable?
-    - Does your application process accept GRE in place of GMAT?
-    - Can GRE scores be used as a replacement for GMAT scores?
-    - Will you accept GRE scores if I don't have GMAT?
-    - Can I provide GRE scores for my application instead of GMAT?
-    - Are GRE results considered equivalent to GMAT for your admissions?
-    - Do your admissions accept GRE scores as a GMAT alternative?
-    - Will GRE scores fulfill the GMAT requirement for your program?
-    - Is it allowed to submit GRE results instead of GMAT for application?
+    - Can I submit GRE scores instead of [gmat](topic)?
+    - Do you accept GRE instead of [gmat](topic)?
+    - Is the GRE accepted in place of the [gmat](topic)?
+    - Will you consider GRE scores instead of [gmat](topic) scores?
+    - Do you accept the GRE as an alternative to the [gmat](topic)?
+    - Can I use my GRE results instead of [gmat](topic) for your program?
+    - Does your institution accept GRE in lieu of [gmat](topic)?
+    - Is it possible to apply with GRE scores instead of [gmat](topic)?
+    - Are GRE scores valid for applications in place of [gmat](topic) scores?
+    - I am from Iran. Can I hand in GRE instead of [gmat](topic)?
+    - Can I use GRE scores instead of [gmat](topic) for admission?
+    - Is GRE accepted as a substitute for [gmat](topic)?
+    - Are GRE scores interchangeable with [gmat](topic) scores for your program?
+    - Can I apply with GRE scores rather than [gmat](topic)?
+    - Is submitting GRE scores instead of [gmat](topic) acceptable?
+    - Does your application process accept GRE in place of [gmat](topic)?
+    - Can GRE scores be used as a replacement for [gmat](topic) scores?
+    - Will you accept GRE scores if I don't have [gmat](topic)?
+    - Can I provide GRE scores for my application instead of [gmat](topic)?
+    - Are GRE results considered equivalent to [gmat](topic) for your admissions?
+    - Do your admissions accept GRE scores as a [gmat](topic) alternative?
+    - Will GRE scores fulfill the [gmat](topic) requirement for your program?
+    - Is it allowed to submit GRE results instead of [gmat](topic) for application?
 
 - intent: english_proficiency_proof
   examples: |
@@ -1355,26 +1355,26 @@ nlu:
 
 - intent: semester_arrive_late
   examples: |
-    - Is it possible to arrive later in the semester?
-    - Can I start the semester late?
-    - Is late arrival in the semester allowed?
-    - May I join the semester after it has started?
-    - Is it possible to begin the semester at a later date?
-    - Can I arrive after the semester has begun?
-    - Is late entry into the semester permitted?
-    - Can I commence my studies later in the semester?
-    - Is it acceptable to arrive partway through the semester?
-    - Can I start my classes after the semester has started?
-    - Is it okay to join the semester late?
-    - Is there an option to begin the semester late?
-    - Can I enroll after the semester begins?
-    - Is starting the semester late possible?
-    - Can I attend classes if I arrive later in the semester?
-    - Can I enter the semester after the official start date?
-    - Is it permissible to begin the semester after it starts?
-    - Is it allowed to start my studies late in the semester?
-    - Can I register for the semester if I arrive late?
-    - Is it possible to start the semester late and still join classes?
+    - Is it possible to arrive later in the [semester](topic)?
+    - Can I start the [semester](topic) late?
+    - Is late arrival in the [semester](topic) allowed?
+    - May I join the [semester](topic) after it has started?
+    - Is it possible to begin the [semester](topic) at a later date?
+    - Can I arrive after the [semester](topic) has begun?
+    - Is late entry into the [semester](topic) permitted?
+    - Can I commence my studies later in the [semester](topic)?
+    - Is it acceptable to arrive partway through the [semester](topic)?
+    - Can I start my classes after the [semester](topic) has started?
+    - Is it okay to join the [semester](topic) late?
+    - Is there an option to begin the [semester](topic) late?
+    - Can I enroll after the [semester](topic) begins?
+    - Is starting the [semester](topic) late possible?
+    - Can I attend classes if I arrive later in the [semester](topic)?
+    - Can I enter the [semester](topic) after the official start date?
+    - Is it permissible to begin the [semester](topic) after it starts?
+    - Is it allowed to start my studies late in the [semester](topic)?
+    - Can I register for the [semester](topic) if I arrive late?
+    - Is it possible to start the [semester](topic) late and still join classes?
 
 - intent: defer_study_start
   examples: |
@@ -1405,103 +1405,111 @@ nlu:
 
 - intent: semester_start
   examples: |
-    - When does the semester start?
-    - When does the winter semester begin?
-    - When does summer semester begin?
-    - When does the semester begin?
-    - What is the start date of the semester?
-    - Can you tell me the semester start date?
-    - What is the beginning date for the semester?
-    - When is the first day of the semester?
-    - When does the fall semester start?
-    - What is the starting date for the semester?
-    - When does the academic semester commence?
-    - When is the semester start date?
-    - What date does the semester begin?
-    - Can you provide the start date for the semester?
-    - When do classes start for the semester?
-    - When is the official start of the semester?
-    - When does the new semester start?
+    - When does the [semester](topic) start?
+    - When does the winter [semester](topic) begin?
+    - When does summer [semester](topic) begin?
+    - When does the [semester](topic) begin?
+    - What is the start date of the [semester](topic)?
+    - Can you tell me the [semester](topic) start date?
+    - What is the beginning date for the [semester](topic)?
+    - When is the first day of the [semester](topic)?
+    - When does the fall [semester](topic) start?
+    - What is the starting date for the [semester](topic)?
+    - When does the academic [semester](topic) commence?
+    - When is the [semester](topic) start date?
+    - What date does the [semester](topic) begin?
+    - Can you provide the start date for the [semester](topic)?
+    - When do classes start for the [semester](topic)?
+    - When is the official start of the [semester](topic)?
+    - When does the new [semester](topic) start?
     - When does the academic term begin?
-    - What is the date the semester starts?
-    - Can you tell me when the semester begins?
-    - When will the semester start?
-    - What is the first day of classes for the semester?
-    - When does the university semester start?
-    - What is the opening date of the semester?
+    - What is the date the [semester](topic) starts?
+    - Can you tell me when the [semester](topic) begins?
+    - When will the [semester](topic) start?
+    - What is the first day of classes for the [semester](topic)?
+    - When does the university [semester](topic) start?
+    - What is the opening date of the [semester](topic)?
 
 - intent: time_span_semester
   examples: |
-    - How long is a typical semester?
-    - What is the duration of a typical semester?
-    - How many months does a typical semester last?
-    - What is the length of a standard semester?
-    - What is the typical length of a semester?
-    - How long does a usual semester run?
-    - How long does a semester typically last?
-    - What is the time span of a typical semester?
-    - How long is a standard semester?
-    - What is the usual duration of a semester?
-    - How long does the average semester last?
-    - What is the average length of a semester?
-    - How many weeks does a semester typically last?
-    - How long does one semester usually last?
-    - What is the standard duration of a semester?
-    - How many months is a semester?
-    - How long does the academic semester last?
-    - What is the usual length of a semester?
-    - How long is each semester?
-    - What is the normal duration of a semester?
+    - How long is a typical [semester](topic)?
+    - What is the duration of a typical [semester](topic)?
+    - How many months does a typical [semester](topic) last?
+    - What is the length of a standard [semester](topic)?
+    - What is the typical length of a [semester](topic)?
+    - How long does a usual [semester](topic) run?
+    - How long does a [semester](topic) typically last?
+    - What is the time span of a typical [semester](topic)?
+    - How long is a standard [semester](topic)?
+    - What is the usual duration of a [semester](topic)?
+    - How long does the average [semester](topic) last?
+    - What is the average length of a [semester](topic)?
+    - How many weeks does a [semester](topic) typically last?
+    - How long does one [semester](topic) usually last?
+    - What is the standard duration of a [semester](topic)?
+    - How many months is a [semester](topic)?
+    - How long does the academic [semester](topic) last?
+    - What is the usual length of a [semester](topic)?
+    - How long is each [semester](topic)?
+    - What is the normal duration of a [semester](topic)?
 
 - intent: work_experience_accepted
   examples: |
-    - Is work experience accepted which I gained while studying?
-    - Do you consider work experience gained during my studies?
-    - Is work experience acquired while studying taken into account?
-    - Will you accept work experience obtained while I was a student?
-    - Is work experience during my studies recognized in the application process?
-    - Do you value work experience gained concurrently with my studies?
-    - Is work experience obtained while studying considered valid?
-    - Does work experience accumulated during my studies count towards eligibility?
-    - Will my work experience during my academic studies be considered?
-    - Is work experience an asset?
-    - Can work experience gained while studying be included in my application?
-    - Is work experience during my studies valid for application purposes?
-    - Do you acknowledge work experience gained while I was a student?
-    - Is work experience from my student years accepted?
-    - Is work experience earned during my academic period taken into account?
-    - Will you count work experience I gained while in school?
-    - Does work experience during my education matter for the application?
-    - Can I include work experience from my study period in my application?
-    - Is student-time work experience accepted in the evaluation?
-    - Is work experience an advantage if gained while studying?
+    - Is [work experience](topic) accepted which I gained while studying?
+    - Do you consider [work experience](topic) gained during my studies?
+    - Is [work experience](topic) acquired while studying taken into account?
+    - Will you accept [work experience](topic) obtained while I was a student?
+    - Is [work experience](topic) during my studies recognized in the application process?
+    - Do you value [work experience](topic) gained concurrently with my studies?
+    - Is [work experience](topic) obtained while studying considered valid?
+    - Does [work experience](topic) accumulated during my studies count towards eligibility?
+    - Will my [work experience](topic) during my academic studies be considered?
+    - Is [work experience](topic) an asset?
+    - Can [work experience](topic) gained while studying be included in my application?
+    - Is [work experience](topic) during my studies valid for application purposes?
+    - Do you acknowledge [work experience](topic) gained while I was a student?
+    - Is [work experience](topic) from my student years accepted?
+    - Is [work experience](topic) earned during my academic period taken into account?
+    - Will you count [work experience](topic) I gained while in school?
+    - Does [work experience](topic) during my education matter for the application?
+    - Can I include [work experience](topic) from my study period in my application?
+    - Is student-time [work experience](topic) accepted in the evaluation?
+    - Is [work experience](topic) an advantage if gained while studying?
 
 - intent: swap_work_experience
   examples: |
-    - Can I swap work experience for academic study requirements?
-    - Is it possible to substitute work experience for academic study requirements?
-    - Can work experience be used in place of academic study requirements?
-    - Are academic study requirements interchangeable with relevant work experience?
-    - Can I fulfill academic study requirements with equivalent work experience?
-    - Is there an option to substitute academic study requirements with relevant work experience?
-    - Can work experience satisfy the academic study prerequisites?
-    - Is work experience considered an alternative to meeting academic study requirements?
-    - Am I allowed to use work experience to fulfill academic study criteria?
-    - Can work experience replace academic study requirements?
-    - Is it permissible to use work experience instead of academic studies?
-    - Can I meet the academic study requirements through work experience?
-    - Is work experience acceptable in lieu of academic study requirements?
-    - Can relevant work experience be used to fulfill academic requirements?
-    - Can I use my work experience to meet the academic prerequisites?
-    - Is it allowed to use work experience to substitute academic studies?
-    - Can work experience be counted towards academic study requirements?
-    - Is there a provision to use work experience in place of academic courses?
-    - Can I leverage work experience to meet academic requirements?
+    - Can I swap [work experience](topic) for academic study requirements?
+    - Is it possible to substitute [work experience](topic) for academic study requirements?
+    - Can [work experience](topic) be used in place of academic study requirements?
+    - Are academic study requirements interchangeable with relevant [work experience](topic)?
+    - Can I fulfill academic study requirements with equivalent [work experience](topic)?
+    - Is there an option to substitute academic study requirements with relevant [work experience](topic)?
+    - Can [work experience](topic) satisfy the academic study prerequisites?
+    - Is [work experience](topic) considered an alternative to meeting academic study requirements?
+    - Am I allowed to use [work experience](topic) to fulfill academic study criteria?
+    - Can [work experience](topic) replace academic study requirements?
+    - Is it permissible to use [work experience](topic) instead of academic studies?
+    - Can I meet the academic study requirements through [work experience](topic)?
+    - Is [work experience](topic) acceptable in lieu of academic study requirements?
+    - Can relevant [work experience](topic) be used to fulfill academic requirements?
+    - Can I use my [work experience](topic) to meet the academic prerequisites?
+    - Is it allowed to use [work experience](topic) to substitute academic studies?
+    - Can [work experience](topic) be counted towards academic study requirements?
+    - Is there a provision to use [work experience](topic) in place of academic courses?
+    - Can I leverage [work experience](topic) to meet academic requirements?
     - Can I use my professional experience instead of academic qualifications?
-    - Is work experience valid to fulfill academic criteria?
+    - Is [work experience](topic) valid to fulfill academic criteria?
     - Can I use my job experience to meet the academic study requirements?
     - Can professional experience substitute academic prerequisites?
-    - Is it acceptable to use work experience to meet academic study standards?
+    - Is it acceptable to use [work experience](topic) to meet academic study standards?
+
+- intent: general_followup
+  examples: |
+    - Do I need it?
+    - is it needed?
+    - who can check?
+    - what else?
+    - How long does it take?
 
 - intent: chitchat/ask_wellbeing
   examples: |
@@ -1913,30 +1921,30 @@ nlu:
 
 - intent: cv+motivational_letter
   examples: | 
-    - Do I need to submit a CV? Is a motivational letter required?
-    - Is a CV necessary for the application? Do I have to provide a motivational letter?
-    - Do I have to send a CV? Is a motivational letter mandatory?
-    - Is a CV compulsory for the application? Do I need to include a motivational letter?
-    - Do I need to attach a CV? Is a motivational letter obligatory?
-    - Is a CV required for the application? Do I need to submit a motivational letter?
-    - Do I need to include a CV? Is a motivational letter essential?
-    - Is a CV mandatory for the application? Do I have to write a motivational letter?
-    - Do I need to provide a CV? Is a motivational letter needed?
-    - Is a CV obligatory for the application? Do I need to attach a motivational letter?
-    - Do I have to upload a CV? Is a motivational letter compulsory?
-    - Is a CV essential for the application? Do I need to send a motivational letter?
-    - Do I need to submit a CV? Is a motivational letter required?
-    - Is a CV necessary for the application? Do I have to provide a motivational letter?
-    - Do I have to send a CV? Is a motivational letter mandatory?
-    - Is a CV compulsory for the application? Do I need to include a motivational letter?
-    - Do I need to attach a CV? Is a motivational letter obligatory?
-    - Is a CV required for the application? Do I need to submit a motivational letter?
-    - Do I need to include a CV? Is a motivational letter essential?
-    - Is a CV mandatory for the application? Do I have to write a motivational letter?
-    - Do I need to provide a CV? Is a motivational letter needed?
-    - Is a CV obligatory for the application? Do I need to attach a motivational letter?
-    - Do I have to upload a CV? Is a motivational letter compulsory?
-    - Is a CV essential for the application? Do I need to send a motivational letter?
+    - Do I need to submit a CV? Is a [motivational letter](topic) required?
+    - Is a CV necessary for the application? Do I have to provide a [motivational letter](topic)?
+    - Do I have to send a CV? Is a [motivational letter](topic) mandatory?
+    - Is a CV compulsory for the application? Do I need to include a [motivational letter](topic)?
+    - Do I need to attach a CV? Is a [motivational letter](topic) obligatory?
+    - Is a CV required for the application? Do I need to submit a [motivational letter](topic)?
+    - Do I need to include a CV? Is a [motivational letter](topic) essential?
+    - Is a CV mandatory for the application? Do I have to write a [motivational letter](topic)?
+    - Do I need to provide a CV? Is a [motivational letter](topic) needed?
+    - Is a CV obligatory for the application? Do I need to attach a [motivational letter](topic)?
+    - Do I have to upload a CV? Is a [motivational letter](topic) compulsory?
+    - Is a CV essential for the application? Do I need to send a [motivational letter](topic)?
+    - Do I need to submit a CV? Is a [motivational letter](topic) required?
+    - Is a CV necessary for the application? Do I have to provide a [motivational letter](topic)?
+    - Do I have to send a CV? Is a [motivational letter](topic) mandatory?
+    - Is a CV compulsory for the application? Do I need to include a [motivational letter](topic)?
+    - Do I need to attach a CV? Is a [motivational letter](topic) obligatory?
+    - Is a CV required for the application? Do I need to submit a [motivational letter](topic)?
+    - Do I need to include a CV? Is a [motivational letter](topic) essential?
+    - Is a CV mandatory for the application? Do I have to write a [motivational letter](topic)?
+    - Do I need to provide a CV? Is a [motivational letter](topic) needed?
+    - Is a CV obligatory for the application? Do I need to attach a [motivational letter](topic)?
+    - Do I have to upload a CV? Is a [motivational letter](topic) compulsory?
+    - Is a CV essential for the application? Do I need to send a [motivational letter](topic)?
 
 - intent: masters_program+consecutive_master
   examples: |
