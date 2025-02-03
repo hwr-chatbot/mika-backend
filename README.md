@@ -27,7 +27,7 @@
     ```
 4. Run the Docker image using
     ```bash
-    docker run -p 5005:5005 my-mika-image
+    docker run -p 5005:5005 -p 5055:5055 my-mika-image
     ```
 5. Use your commandline and navigate to the ```Rasa-chatroom-react``` repository
 6. Use the following command to start your frontend
@@ -46,3 +46,12 @@ poetry run rasa run --enable-api --cors "" && rasa run actions --cors ""
 ```bash
 poetry run rasa train
 ```
+
+## How to work with the Bot on `mika.lehre.hwr-berlin.de`
+The repositories should already be cloned and found in the folder `git`.
+The frontend ist running in a screen session. Enter it with 
+```bash
+screen -r
+```
+or start a new screen sesssion, if the frontend isn't running.
+If you want to exit the screen press `CRTL+a` `d`
