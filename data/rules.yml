@@ -21,13 +21,15 @@ rules:
     - intent: chitchat
     - action: utter_chitchat
 
-# - rule: Process multiple intents
-#   steps:
-#     - intent: ask_multiple_questions
-#     - action: action_process_and_respond
-  
-    
-#- rule: Say you're welcome anytime the user says thank you
-#  steps:
-#    - intent: bedanken
-#    - action: utter_gerne    
+- rule: react to message based on slot topic
+  condition:
+  - slot_was_set:
+      - topic
+  steps:
+  - intent: general_followup
+  - action: action_respond_based_on_topic
+
+- rule: try to set slot after each message
+  steps:
+    - intent: any_intent
+    - action: action_set_topic
