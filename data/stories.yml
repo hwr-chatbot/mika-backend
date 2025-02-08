@@ -62,10 +62,6 @@ stories:
   steps:
   - intent: study_without_a-level
   - action: utter_study_without_a-level
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: a-level
-  - action: utter_end
 
 - story: english_courses
   steps:
@@ -76,10 +72,6 @@ stories:
   steps:
   - intent: guest_auditor
   - action: utter_guest_auditor
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: guest auditor
-  - action: utter_end
 
 - story: demo_temp
   steps:
@@ -109,10 +101,6 @@ stories:
   steps:
   - intent: admission_requirement
   - action: utter_admission_requirement
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: admission
-  - action: utter_end
 
 - story: english_certificate
   steps:
@@ -128,19 +116,11 @@ stories:
   steps:
   - intent: cv
   - action: utter_cv
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: cv
-  - action: utter_end
 
 - story: prerequisite_admission
   steps:
   - intent: prerequisite_admission
   - action: utter_prerequisite_admission
-  - action: action_set_topic
-  - slot_was_set: 
-    - topic: admission
-  - action: utter_end
 
 - story: masters_program
   steps:
@@ -151,10 +131,6 @@ stories:
   steps:
   - intent: admission_documents
   - action: utter_admission_documents
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: admission
-  - action: utter_end
 
 - story: master_or_bachelor
   steps:
@@ -165,10 +141,6 @@ stories:
   steps:
   - intent: application_from_international_university
   - action: utter_application_from_international_university
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: application
-  - action: utter_end
 
 - story: missed_deadline
   steps:
@@ -179,19 +151,11 @@ stories:
   steps:
   - intent: application_deadline
   - action: utter_application_deadline
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: application
-  - action: utter_end
 
 - story: where_to_apply
   steps:
   - intent: where_to_apply
   - action: utter_where_to_apply
-  - action: action_set_topic
-  - slot_was_set:
-    - topic: application
-  - action: utter_end
 
 - story: application_many_programs_needed
   steps:
@@ -328,124 +292,124 @@ stories:
   - intent: swap_work_experience
   - action: utter_swap_work_experience
 
-- story: ask_about_gmat
-  steps:
-    - intent: whats_gmat
-    - action: action_handle_multiple_intents
-    - intent: gmat_needed
-    - action: action_handle_multiple_intents
+# - story: ask_about_gmat
+#   steps:
+#     - intent: whats_gmat
+#     - action: action_handle_multiple_intents
+#     - intent: gmat_needed
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_aps
-  steps:
-    - intent: whats_aps
-    - action: action_handle_multiple_intents
-    - intent: aps_needed
-    - action: action_handle_multiple_intents
+# - story: ask_about_aps
+#   steps:
+#     - intent: whats_aps
+#     - action: action_handle_multiple_intents
+#     - intent: aps_needed
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_application
-  steps:
-    - intent: where_to_apply
-    - action: action_handle_multiple_intents
-    - intent: application_deadline
-    - action: action_handle_multiple_intents
+# - story: ask_about_application
+#   steps:
+#     - intent: where_to_apply
+#     - action: action_handle_multiple_intents
+#     - intent: application_deadline
+#     - action: action_handle_multiple_intents
 
-- story: check_application_status
-  steps:
-    - intent: application_status
-    - action: action_handle_multiple_intents
-    - intent: application_status_uni_assist
-    - action: action_handle_multiple_intents
+# - story: check_application_status
+#   steps:
+#     - intent: application_status
+#     - action: action_handle_multiple_intents
+#     - intent: application_status_uni_assist
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_multiple_programs
-  steps:
-    - intent: application_many_programs_needed
-    - action: action_handle_multiple_intents
-    - intent: application_many_programs_possible
-    - action: action_handle_multiple_intents
+# - story: ask_about_multiple_programs
+#   steps:
+#     - intent: application_many_programs_needed
+#     - action: action_handle_multiple_intents
+#     - intent: application_many_programs_possible
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_application_improvement
-  steps:
-    - intent: application_many_programs_chance_increase
-    - action: action_handle_multiple_intents
-    - intent: application_status
-    - action: action_handle_multiple_intents
+# - story: ask_about_application_improvement
+#   steps:
+#     - intent: application_many_programs_chance_increase
+#     - action: action_handle_multiple_intents
+#     - intent: application_status
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_deadline_and_status
-  steps:
-    - intent: application_deadline
-    - action: action_handle_multiple_intents
-    - intent: application_status
-    - action: action_handle_multiple_intents
+# - story: ask_about_deadline_and_status
+#   steps:
+#     - intent: application_deadline
+#     - action: action_handle_multiple_intents
+#     - intent: application_status
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_english_proficiency
-  steps:
-    - intent: english_proficiency_proof
-    - action: action_handle_multiple_intents
-    - intent: duolingo_accepted
-    - action: action_handle_multiple_intents
+# - story: ask_about_english_proficiency
+#   steps:
+#     - intent: english_proficiency_proof
+#     - action: action_handle_multiple_intents
+#     - intent: duolingo_accepted
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_documents
-  steps:
-    - intent: cv
-    - action: action_handle_multiple_intents
-    - intent: motivational_letter
-    - action: action_handle_multiple_intents
+# - story: ask_about_documents
+#   steps:
+#     - intent: cv
+#     - action: action_handle_multiple_intents
+#     - intent: motivational_letter
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_admission
-  steps:
-    - intent: admission_documents
-    - action: action_handle_multiple_intents
-    - intent: admission_requirement
-    - action: action_handle_multiple_intents
+# - story: ask_about_admission
+#   steps:
+#     - intent: admission_documents
+#     - action: action_handle_multiple_intents
+#     - intent: admission_requirement
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_masters_program
-  steps:
-    - intent: masters_program
-    - action: action_handle_multiple_intents
-    - intent: consecutive_master
-    - action: action_handle_multiple_intents
+# - story: ask_about_masters_program
+#   steps:
+#     - intent: masters_program
+#     - action: action_handle_multiple_intents
+#     - intent: consecutive_master
+#     - action: action_handle_multiple_intents
 
-- story: check_eligibility
-  steps:
-    - intent: eligibility
-    - action: action_handle_multiple_intents
-    - intent: eligibility_check
-    - action: action_handle_multiple_intents
+# - story: check_eligibility
+#   steps:
+#     - intent: eligibility
+#     - action: action_handle_multiple_intents
+#     - intent: eligibility_check
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_eligibility_check
-  steps:
-    - intent: eligibility_check
-    - action: action_handle_multiple_intents
-    - intent: eligibility_check_who
-    - action: action_handle_multiple_intents
+# - story: ask_about_eligibility_check
+#   steps:
+#     - intent: eligibility_check
+#     - action: action_handle_multiple_intents
+#     - intent: eligibility_check_who
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_study_without_relevant_background
-  steps:
-    - intent: no_relevant_studies
-    - action: action_handle_multiple_intents
-    - intent: study_without_a-level
-    - action: action_handle_multiple_intents
+# - story: ask_about_study_without_relevant_background
+#   steps:
+#     - intent: no_relevant_studies
+#     - action: action_handle_multiple_intents
+#     - intent: study_without_a-level
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_deferring_study_start
-  steps:
-    - intent: defer_study_start
-    - action: action_handle_multiple_intents
-    - intent: semester_start
-    - action: action_handle_multiple_intents
+# - story: ask_about_deferring_study_start
+#   steps:
+#     - intent: defer_study_start
+#     - action: action_handle_multiple_intents
+#     - intent: semester_start
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_semester_timing
-  steps:
-    - intent: semester_start
-    - action: action_handle_multiple_intents
-    - intent: time_span_semester
-    - action: action_handle_multiple_intents
+# - story: ask_about_semester_timing
+#   steps:
+#     - intent: semester_start
+#     - action: action_handle_multiple_intents
+#     - intent: time_span_semester
+#     - action: action_handle_multiple_intents
 
-- story: ask_about_work_experience
-  steps:
-    - intent: work_experience_accepted
-    - action: action_handle_multiple_intents
-    - intent: swap_work_experience
-    - action: action_handle_multiple_intents
+# - story: ask_about_work_experience
+#   steps:
+#     - intent: work_experience_accepted
+#     - action: action_handle_multiple_intents
+#     - intent: swap_work_experience
+#     - action: action_handle_multiple_intents
 
 - story: greet_and_provide_course_info
   steps:
@@ -585,5 +549,3 @@ stories:
   - action: utter_thank
   - intent: say_goodbye
   - action: utter_say_goodbye
-
-- story: 
