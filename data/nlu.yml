@@ -1503,13 +1503,13 @@ nlu:
     - Can professional experience substitute academic prerequisites?
     - Is it acceptable to use [work experience](topic) to meet academic study standards?
 
-- intent: general_followup
-  examples: |
-    - Do I need it?
-    - is it needed?
-    - who can check?
-    - what else?
-    - How long does it take?
+# - intent: general_followup
+#   examples: |
+#     - Do I need it?
+#     - is it needed?
+#     - who can check?
+#     - what else?
+#     - How long does it take?
 
 - intent: chitchat/ask_wellbeing
   examples: |
