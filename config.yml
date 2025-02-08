@@ -10,7 +10,7 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 150
+  epochs: 100
   intent_classification: true 
   use_multi_label: true
 - name: EntitySynonymMapper
@@ -20,10 +20,10 @@ pipeline:
 - name: FallbackClassifier
   threshold: 0.7
 policies:
-- name: UnexpecTEDIntentPolicy
-  epochs: 200
+# - name: UnexpecTEDIntentPolicy
+#   epochs: 150
 - name: TEDPolicy
-  epochs: 200
+  epochs: 150
 - name: MemoizationPolicy
 - name: RulePolicy
 assistant_id: 20240715-121044-inverse-baluster
