@@ -4,15 +4,20 @@ recipe: default.v1
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
+  use_lookup_tables: true
+  use_regexes: true
+  user_word_boundaries: true
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 100
+  epochs: 150
   intent_classification: true 
+  entity_recognition: true
   use_multi_label: true
+  ranking_length: 3
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100
@@ -26,4 +31,5 @@ policies:
   epochs: 150
 - name: MemoizationPolicy
 - name: RulePolicy
+  core_fallback_action_name: "action_handle_unknown_intent"
 assistant_id: 20240715-121044-inverse-baluster
