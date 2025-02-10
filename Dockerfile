@@ -33,4 +33,4 @@ EXPOSE 5055
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 # Command to run both Rasa server and Actions server
-CMD ["poetry", "run", "rasa", "run", "--enable-api", "--cors", "*"]
+CMD ["sh", "-c", "poetry run rasa run --enable-api --cors '*' & poetry run rasa run actions --cors '*'"]
