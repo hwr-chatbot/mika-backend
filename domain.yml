@@ -608,12 +608,10 @@ responses:
   - text: 'Required courses must be taken at an accredited university and work experience cannot be counted towards them.'
   - text: 'Work experience cannot replace the required university courses. All required courses must be completed at an accredited institution.'
 
-  utter_respond_based_on_topic:
-    - text: "Let's continue talking about {topic}. What do you want to know?"
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: 
+  carry_over_slots_to_new_session: false
   
 entities:
   - topic
@@ -625,12 +623,7 @@ slots:
     mappings:
       - type: from_entity
         entity: topic
-  combined_message:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: custom
-
 
 actions:
   - action_handle_unknown_intent
+  - action_handle_multiple_questions
