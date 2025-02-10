@@ -1,7 +1,8 @@
-from typing import Any, Dict, List, Text
+from typing import Any, List, Dict, Text
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet, UserUtteranceReverted
+from rasa_sdk.events import SlotSet
+import requests
 
 # class ActionSetTopic(Action):
 #     def name(self) -> Text:
@@ -55,6 +56,9 @@ from rasa_sdk.events import SlotSet, UserUtteranceReverted
 #             dispatcher.utter_message(text="I could not determine the topic from your input. Could you please clarify?")
 #             return [SlotSet("topic", None), SlotSet("last_intent", None)]
 
+
+RASA_NLU_URL = "http://localhost:5005/model/parse"
+
 class ActionHandleUnknownIntent(Action):
     def name(self) -> Text:
         return "action_handle_unknown_intent"
@@ -67,17 +71,34 @@ class ActionHandleUnknownIntent(Action):
         print(f"🔍 DEBUG: Last Topic = {last_topic}")
         print(f"🔍 DEBUG: Last Message = {last_message}")
 
+        # Falls ein Topic existiert, kombiniere es mit der letzten Nachricht
         if last_topic:
             combined_message = f"{last_topic} {last_message}"
-            print(f"🔍 DEBUG: Kombinierte Nachricht = {combined_message}")
+            print(f"🔍 DEBUG: Kombinierte Nachricht zur NLU = {combined_message}")
 
-            # Ersetze die letzte Nutzereingabe mit der kombinierten Nachricht
-            return [
-                SlotSet("combined_message", combined_message),
-                UserUtteranceReverted()  # Erzwingt eine erneute Intent-Klassifikation
-            ]
+            # Schicke die neue Nachricht zur Intent-Klassifikation an Rasa NLU
+            response = requests.post(RASA_NLU_URL, json={"text": combined_message}).json()
+            print(f"🔍 DEBUG: NLU Response = {response}")
+
+            # Falls ein Intent erkannt wurde, extrahiere ihn
+            recognized_intent = response.get("intent", {}).get("name")
+            confidence = response.get("intent", {}).get("confidence", 0.0)
+
+            if recognized_intent and confidence > 0.6:
+                print(f"✅ Intent erkannt: {recognized_intent} (Confidence: {confidence})")
+                dispatcher.utter_message(template=f"utter_{recognized_intent}")  # Antwort aus domain.yml senden
+                
+                # **Thema nur für die aktuelle Anfrage verwenden, danach zurücksetzen**
+                return [SlotSet("topic", None)]
+            else:
+                print("❌ Kein Intent erkannt, Fallback-Antwort wird verwendet.")
+                dispatcher.utter_message(text="I'm sorry, I didn't understand that. Can you clarify?")
+
+                return [SlotSet("topic", None)]  
         else:
-            print("🔍 DEBUG: Kein Topic-Slot gefunden, normale Fallback-Antwort wird verwendet.")
-            dispatcher.utter_message(response="Ich bin mir nicht sicher, was du meinst. Kannst du es anders formulieren?")
-            return [UserUtteranceReverted()]
+            print("❌ Kein Topic vorhanden, Fallback-Antwort wird verwendet.")
+            dispatcher.utter_message(template="utter_please_rephrase")
 
+            return [SlotSet("topic", None)]
+        
+        return []
