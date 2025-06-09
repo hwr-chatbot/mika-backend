@@ -26,8 +26,8 @@ if pm2 describe rasa-backend > /dev/null 2>&1; then
   pm2 restart rasa-backend --update-env
 else
   echo "🚀 Prozess 'rasa-backend' nicht gefunden, starte neu..."
-  pm2 start --name rasa-backend --interpreter python3 -- "poetry run rasa run --enable-api --cors http://localhost:5173"
-  pm2 start --name rasa-actions --interpreter python3 -- "poetry run rasa run actions --cors http://localhost:5173"
+  pm2 start ./start-rasa-backend.sh --name rasa-backend
+  pm2 start ./start-rasa-actions.sh --name rasa-actions
 fi
 
 echo "✅ Deployment abgeschlossen!"
