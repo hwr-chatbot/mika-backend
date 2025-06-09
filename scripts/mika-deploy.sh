@@ -21,6 +21,8 @@ poetry install
 
 echo "🚀 Starte oder restarte Rasa mit Actions via PM2..."
 
+cd "$PROJECT_DIR"
+
 if pm2 describe rasa-backend > /dev/null 2>&1; then
   echo "🔄 Prozess 'rasa-backend' gefunden, starte Neustart..."
   pm2 restart ecosystem.config.js --update-env
