@@ -4,13 +4,13 @@ version = "0.1.0"
 description = "A chatbot for the website of the hwr"
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "3.9.*"
-rasa = {extras = ["spacy"], version = "^3.4.0"}
+rasa = { extras = ["spacy"], version = "^3.4.0" }
 spacy = "3.4.1"
 sqlalchemy = "<2.0"
-
 
 [build-system]
 requires = ["poetry-core"]
