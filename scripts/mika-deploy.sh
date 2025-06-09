@@ -23,11 +23,10 @@ echo "🚀 Starte oder restarte Rasa mit Actions via PM2..."
 
 if pm2 describe rasa-backend > /dev/null 2>&1; then
   echo "🔄 Prozess 'rasa-backend' gefunden, starte Neustart..."
-  pm2 restart rasa-backend --update-env
+  pm2 restart ecosystem.config.js --update-env
 else
   echo "🚀 Prozess 'rasa-backend' nicht gefunden, starte neu..."
-  pm2 start ./start-rasa-backend.sh --name rasa-backend
-  pm2 start ./start-rasa-actions.sh --name rasa-actions
+  pm2 start ecosystem.config.js
 fi
 
 echo "✅ Deployment abgeschlossen!"
